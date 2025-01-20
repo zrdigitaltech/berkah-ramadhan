@@ -10,6 +10,17 @@ export const productsReducer = (state = initialState, action) => {
         productsList: action.payload
       };
       return state;
+
+    // Terlaris
+    case actionType.loadProductsTerlaris:
+      state = {
+        ...state,
+        productsTerlaris: action.payload
+      };
+      return state;
+    case actionType.loadProductsTerlarisResetData:
+      return initialState;
+
     case actionType.loadProductsResetData:
       return initialState;
     default:

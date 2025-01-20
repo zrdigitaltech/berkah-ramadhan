@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Delfi Chic-Choc",
     "varian": [
       {
@@ -7,413 +8,3723 @@
         "jumlah": 250,
         "nama_berat": "gr",
         "harga": 43000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 60000
       },
       {
         "id": 2,
         "jumlah": 500,
         "nama_berat": "gr",
         "harga": 83000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 100000
       },
       {
         "id": 3,
         "jumlah": 1,
         "nama_berat": "kg",
         "harga": 143000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 1700000
       }
     ],
-    "link_wa": 6281287799457,
-    "link_shopee": "https://shope.ee/7fCfxKZyvy",
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/delfi-chicchoc.webp",
-    "kategori": "cokelat"
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/3As7Y4WaNV",
+    "images": "/berkah-ramadhan/assets/images/product/delfi-chicchoc.webp",
+    "id_kategori": 1
   },
   {
+    "id": 2,
     "name": "Delfi Maltitos",
     "varian": [
       {
-        "id": 1,
+        "id": 4,
         "jumlah": 500,
         "nama_berat": "gr",
         "harga": 93000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 120000
       }
     ],
-    "link_wa": 6281287799457,
-    "link_shopee": "https://shope.ee/3AkGpqq8FG",
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/delfi-maltitos.jpeg",
-    "kategori": "cokelat"
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/7pdx72mi5W",
+    "images": "/berkah-ramadhan/assets/images/product/delfi-maltitos.webp",
+    "id_kategori": 1
   },
   {
+    "id": 3,
     "name": "Delfi Almond",
     "varian": [
       {
-        "id": 1,
+        "id": 5,
         "jumlah": 500,
         "nama_berat": "gr",
         "harga": 96000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 140000
       }
     ],
-    "link_wa": 6281287799457,
-    "link_shopee": "https://shope.ee/3AkGpqq8FG",
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/delfi-almond.jpeg",
-    "kategori": "cokelat"
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/6AVj820EKH",
+    "images": "/berkah-ramadhan/assets/images/product/delfi-almond.webp",
+    "id_kategori": 1
   },
   {
+    "id": 4,
     "name": "Delfi Cha-cha peanut/choco",
     "varian": [
       {
-        "id": 1,
+        "id": 6,
         "jumlah": 500,
         "nama_berat": "gr",
         "harga": 96000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 140000
       }
     ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/cha-cha.jpeg",
-    "kategori": "cokelat"
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/1qMjy9jzD0",
+    "images": "/berkah-ramadhan/assets/images/product/cha-cha.webp",
+    "id_kategori": 1
   },
   {
+    "id": 5,
     "name": "Kacang Aroma",
     "varian": [
       {
-        "id": 1,
+        "id": 7,
         "jumlah": 500,
         "nama_berat": "gr",
         "harga": 60000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 850000
       },
       {
-        "id": 2,
+        "id": 8,
         "jumlah": 1,
         "nama_berat": "kg",
         "harga": 103000,
-        "stok": 0
+        "stok": 100,
+        "harga_normal": 150000
+      }
+    ],
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/BEVzC9Dc3",
+    "images": "/berkah-ramadhan/assets/images/product/kacang-aroma.webp",
+    "id_kategori": 2
+  },
+
+  {
+    "id": 6,
+    "name": "EK1",
+    "varian": [
+      {
+        "id": 9,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 10,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 11,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 12,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 13,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 309,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
       }
     ],
     "link_wa": 6281287799457,
     "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/kacang-aroma.jpeg",
-    "kategori": "kacang"
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK1.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 7,
+    "name": "Erigo T-Shirt Bbq Mountain Navy - Kaos Unisex",
+    "varian": [
+      {
+        "id": 14,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 15,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 16,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 17,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 18,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 310,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/qUCmpjFnU",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134201-7rasb-m4zusadaum54d7.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 8,
+    "name": "Erigo T-Shirt Oversize Champlain Asphalt - Kaos Oversize Unisex",
+    "varian": [
+      {
+        "id": 19,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 20,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 21,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 22,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 23,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 311,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/3VUxy9OwXE",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134207-7rasg-m584n4tpvwg642.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 9,
+    "name": "Erigo T-Shirt Another Day Black - Kaos Unisex",
+    "varian": [
+      {
+        "id": 24,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 25,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 26,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 27,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 28,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 311,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/3LBXmA3kX2",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134201-7rasl-m4zuyzl3uvpi8a.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 10,
+    "name": "Erigo T-Shirt Oversize Altha White - Kaos Oversize Unisex",
+    "varian": [
+      {
+        "id": 29,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 30,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 31,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 32,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 33,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 312,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/6fRzkPwYiH",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134207-7rasc-m584n4tpt3ba15.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 11,
+    "name": "Erigo T-Shirt Yagate Black - Kaos Unisex",
+    "varian": [
+      {
+        "id": 34,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 35,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 36,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 37,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 38,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 313,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/7zxNL5Pxzd",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134207-7rasj-m5ckdusieytv87.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 12,
+    "name": "Erigo T-Shirt Yokushi Dark Blue - Kaos Unisex",
+    "varian": [
+      {
+        "id": 39,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 40,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 41,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 42,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 43,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 314,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/2qFHBwWDBc",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134207-7rasl-m5cj16xoa340a0.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 14,
+    "name": "Erigo Raglan T-Shirt Parisse Black",
+    "varian": [
+      {
+        "id": 49,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 50,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 51,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 52,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 53,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 316,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://shopee.co.id/Erigo-Raglan-T-Shirt-Parisse-Black-i.187974809.23515073946",
+    "images": "https://down-id.img.susercontent.com/file/sg-11134201-22120-ngidssspynlv48.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 15,
+    "name": "Erigo T-Shirt Jkt48 Shani",
+    "varian": [
+      {
+        "id": 54,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 55,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 56,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 57,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 58,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 317,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "https://down-id.img.susercontent.com/file/id-11134201-7qul2-lk0qkewrkl1b02@resize_w900_nl.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 6,
+    "name": "Erigo T-Shirt Summer Peace Navy - Kaos Unisex",
+    "varian": [
+      {
+        "id": 59,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 60,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 61,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 62,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 63,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 318,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/60CJRIBE2e",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134201-7rasf-m4zvxsvltf54ea.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 7,
+    "name": "Erigo T-Shirt Yachiko Black - Kaos Unisex",
+    "varian": [
+      {
+        "id": 64,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 65,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 66,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 67,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 68,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 319,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/6fS0EfQqPY",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134207-7ras8-m5ckdusigdeb17.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 18,
+    "name": "Erigo T-Shirt Graphic Soleil Black - Kaos Unisex",
+    "varian": [
+      {
+        "id": 69,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 70,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 71,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 72,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 73,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 320,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/2qFHfmOgEK",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134201-7ras8-m4zultqv9jpye4.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 19,
+    "name": "Erigo T-Shirt Vibes Black - Kaos Unisex",
+    "varian": [
+      {
+        "id": 74,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 75,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 76,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 77,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 78,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 321,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://s.shopee.co.id/4fgvrFErfW",
+    "images": "https://down-bs-id.img.susercontent.com/id-11134201-7rasi-m4zuwsmreciba2.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 20,
+    "name": "EK15",
+    "varian": [
+      {
+        "id": 79,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 80,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 81,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 82,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 83,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 322,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK15.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 21,
+    "name": "EK16",
+    "varian": [
+      {
+        "id": 84,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 85,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 86,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 87,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 88,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 323,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK16.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 22,
+    "name": "EK17",
+    "varian": [
+      {
+        "id": 89,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 90,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 91,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 92,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 93,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 324,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK17.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 23,
+    "name": "EK18",
+    "varian": [
+      {
+        "id": 94,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 95,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 96,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 97,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 98,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 325,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK18.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 24,
+    "name": "EK19",
+    "varian": [
+      {
+        "id": 99,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 100,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 101,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 102,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 103,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 326,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK19.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 25,
+    "name": "EK20",
+    "varian": [
+      {
+        "id": 104,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 105,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 106,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 107,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 108,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 327,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK20.webp",
+    "id_kategori": 3
   },
 
   {
-    "name": "EK1",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 0 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek1.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK2",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek2.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK3",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek3.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK4",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek4.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK5",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek5.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK6",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek6.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK7",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek7.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK8",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek8.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK9",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek9.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK10",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek10.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK11",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek11.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK12",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek12.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK13",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek13.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK14",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek14.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK15",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek15.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK16",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek16.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK17",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek17.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK18",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek18.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK19",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek19.jpeg",
-    "kategori": "fashion"
-  },
-  {
-    "name": "EK20",
-    "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
-    ],
-    "link_wa": 6281287799457,
-    "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek20.jpeg",
-    "kategori": "fashion"
-  },
-  {
+    "id": 26,
     "name": "EK21",
     "varian": [
-      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
-      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
-      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
-      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
-      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
-      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+      {
+        "id": 109,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 110,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 111,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 112,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 113,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 328,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
     ],
     "link_wa": 6281287799457,
     "link_shopee": null,
-    "images": "https://github.com/zrdevelopers/berkah-belanja/blob/main/public/assets/images/product/fashion/kaos/ek1.jpeg",
-    "kategori": "fashion"
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK21.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 29,
+    "name": "EK22",
+    "varian": [
+      {
+        "id": 114,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 115,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 116,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 117,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 118,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 329,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK22.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 30,
+    "name": "EK23",
+    "varian": [
+      {
+        "id": 119,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 120,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 121,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 122,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 123,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 330,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK23.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 31,
+    "name": "EK24",
+    "varian": [
+      {
+        "id": 124,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 125,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 126,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 127,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 128,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 331,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK24.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 32,
+    "name": "EK25",
+    "varian": [
+      {
+        "id": 129,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 130,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 131,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 132,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 133,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 332,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK25.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 33,
+    "name": "EK26",
+    "varian": [
+      {
+        "id": 134,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 135,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 136,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 137,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 138,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 333,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK26.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 34,
+    "name": "EK27",
+    "varian": [
+      {
+        "id": 139,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 140,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 141,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 142,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 143,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 334,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK27.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 35,
+    "name": "EK28",
+    "varian": [
+      {
+        "id": 144,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 145,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 146,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 147,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 148,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 335,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK28.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 36,
+    "name": "EK29",
+    "varian": [
+      {
+        "id": 149,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 150,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 151,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 152,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 153,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 336,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK29.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 37,
+    "name": "EK30",
+    "varian": [
+      {
+        "id": 154,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 155,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 156,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 157,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 158,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 337,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK30.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 38,
+    "name": "EK31",
+    "varian": [
+      {
+        "id": 159,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 160,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 161,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 162,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 163,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 338,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK31.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 39,
+    "name": "EK32",
+    "varian": [
+      {
+        "id": 164,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 165,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 166,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 167,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 168,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 339,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK32.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 40,
+    "name": "EK33",
+    "varian": [
+      {
+        "id": 169,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 170,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 171,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 172,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 173,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 340,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK33.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 41,
+    "name": "EK34",
+    "varian": [
+      {
+        "id": 174,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 175,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 176,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 177,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 178,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 341,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK34.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 42,
+    "name": "EK35",
+    "varian": [
+      {
+        "id": 179,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 180,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 181,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 182,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 183,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 342,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK35.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 43,
+    "name": "EK36",
+    "varian": [
+      {
+        "id": 184,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 185,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 186,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 187,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 188,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 343,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK36.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 44,
+    "name": "EK37",
+    "varian": [
+      {
+        "id": 189,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 190,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 191,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 192,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 193,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 344,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK37.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 45,
+    "name": "EK38",
+    "varian": [
+      {
+        "id": 194,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 195,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 196,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 197,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 198,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 345,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK38.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 46,
+    "name": "EK39",
+    "varian": [
+      {
+        "id": 199,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 200,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 201,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 202,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 203,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 346,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK39.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 47,
+    "name": "EK40",
+    "varian": [
+      {
+        "id": 204,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 205,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 206,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 207,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 208,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 347,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK40.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 48,
+    "name": "EK41",
+    "varian": [
+      {
+        "id": 205,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 206,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 207,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 208,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 209,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 348,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK41.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 49,
+    "name": "EK42",
+    "varian": [
+      {
+        "id": 210,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 211,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 212,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 213,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 214,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 349,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK42.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 50,
+    "name": "EK43",
+    "varian": [
+      {
+        "id": 215,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 216,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 217,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 218,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 219,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 350,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK43.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 51,
+    "name": "EK44",
+    "varian": [
+      {
+        "id": 220,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 221,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 222,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 223,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 224,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 351,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK44.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 52,
+    "name": "EK45",
+    "varian": [
+      {
+        "id": 225,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 226,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 227,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 228,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 229,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 352,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK45.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 53,
+    "name": "EK46",
+    "varian": [
+      {
+        "id": 230,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 231,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 232,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 233,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 234,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 353,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK46.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 54,
+    "name": "EK47",
+    "varian": [
+      {
+        "id": 235,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 236,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 237,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 238,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 239,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 354,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK47.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 55,
+    "name": "EK48",
+    "varian": [
+      {
+        "id": 240,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 241,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 241,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 243,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 244,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 355,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK48.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 56,
+    "name": "EK49",
+    "varian": [
+      {
+        "id": 249,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 250,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 251,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 252,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 253,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 356,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK49.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 57,
+    "name": "EK50",
+    "varian": [
+      {
+        "id": 254,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 255,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 256,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 257,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 258,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 357,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK50.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 58,
+    "name": "EK51",
+    "varian": [
+      {
+        "id": 259,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 260,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 261,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 262,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 263,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 358,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK51.webp",
+    "id_kategori": 3
+  },
+  {
+    "id": 59,
+    "name": "EK52",
+    "varian": [
+      {
+        "id": 264,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 265,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 266,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 267,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 268,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 70000,
+        "stok": 100,
+        "harga_normal": 250000
+      },
+      {
+        "id": 359,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 100000,
+        "stok": 0,
+        "harga_normal": 250000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/kaos/EK52.webp",
+    "id_kategori": 3
+  },
+
+  {
+    "id": 60,
+    "name": "ECP1",
+    "varian": [
+      {
+        "id": 269,
+        "jumlah": null,
+        "nama_berat": "28",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 270,
+        "jumlah": null,
+        "nama_berat": "30",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 271,
+        "jumlah": null,
+        "nama_berat": "32",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 272,
+        "jumlah": null,
+        "nama_berat": "34",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 273,
+        "jumlah": null,
+        "nama_berat": "36",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 274,
+        "jumlah": null,
+        "nama_berat": "38",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 275,
+        "jumlah": null,
+        "nama_berat": "40",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/celana-pendek/ECP1.webp",
+    "id_kategori": 4
+  },
+  {
+    "id": 61,
+    "name": "ECP2",
+    "varian": [
+      {
+        "id": 276,
+        "jumlah": null,
+        "nama_berat": "28",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 277,
+        "jumlah": null,
+        "nama_berat": "30",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 278,
+        "jumlah": null,
+        "nama_berat": "32",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 279,
+        "jumlah": null,
+        "nama_berat": "34",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 362,
+        "jumlah": null,
+        "nama_berat": "36",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 280,
+        "jumlah": null,
+        "nama_berat": "38",
+        "harga": 110000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 281,
+        "jumlah": null,
+        "nama_berat": "40",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/celana-pendek/ECP2.webp",
+    "id_kategori": 4
+  },
+
+  {
+    "id": 62,
+    "name": "ES1",
+    "varian": [
+      {
+        "id": 282,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 283,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 284,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 285,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 286,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 358,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 160000,
+        "stok": 0,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/sweter/ES1.webp",
+    "id_kategori": 6
+  },
+  {
+    "id": 63,
+    "name": "ES2",
+    "varian": [
+      {
+        "id": 289,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 290,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 291,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 292,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 293,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 359,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 160000,
+        "stok": 0,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/sweter/ES2.webp",
+    "id_kategori": 6
+  },
+  {
+    "id": 64,
+    "name": "ES3",
+    "varian": [
+      {
+        "id": 294,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 295,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 296,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 297,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 298,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 360,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 160000,
+        "stok": 0,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/sweter/ES3.webp",
+    "id_kategori": 6
+  },
+  {
+    "id": 65,
+    "name": "ES4",
+    "varian": [
+      {
+        "id": 299,
+        "jumlah": null,
+        "nama_berat": "S",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 300,
+        "jumlah": null,
+        "nama_berat": "M",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 301,
+        "jumlah": null,
+        "nama_berat": "L",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 302,
+        "jumlah": null,
+        "nama_berat": "XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 303,
+        "jumlah": null,
+        "nama_berat": "2XL",
+        "harga": 130000,
+        "stok": 100,
+        "harga_normal": 400000
+      },
+      {
+        "id": 361,
+        "jumlah": null,
+        "nama_berat": "3XL",
+        "harga": 160000,
+        "stok": 0,
+        "harga_normal": 400000
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/fashion/sweter/ES4.webp",
+    "id_kategori": 6
+  },
+
+  {
+    "id": 66,
+    "name": "Bika Ambon Mini",
+    "varian": [
+      {
+        "id": 300,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2500,
+        "stok": 100,
+        "harga_normal": 5000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Bika-Ambon-Mini.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 67,
+    "name": "Bolu Gula Merah",
+    "varian": [
+      {
+        "id": 301,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Bolu-Gula-Merah.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 68,
+    "name": "Bolu Karamel Kukus",
+    "varian": [
+      {
+        "id": 302,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Bolu-Karamel-Kukus.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 69,
+    "name": "Bolu Ketan Item",
+    "varian": [
+      {
+        "id": 303,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      },
+      {
+        "id": 304,
+        "jumlah": null,
+        "nama_berat": "Loyang",
+        "harga": 40000,
+        "stok": 100,
+        "harga_normal": 70000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Bolu-Ketan-Item.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 70,
+    "name": "Dadar Gulung",
+    "varian": [
+      {
+        "id": 305,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Dadar-Gulung.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 71,
+    "name": "Lapis Basah Pepe",
+    "varian": [
+      {
+        "id": 306,
+        "jumlah": null,
+        "nama_berat": "20",
+        "harga": 100000,
+        "stok": 100,
+        "harga_normal": 150000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Lapis-Basah-Pepe.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 72,
+    "name": "Martabak Mini",
+    "varian": [
+      {
+        "id": 307,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Martabak-Mini.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 73,
+    "name": "Putri Ayu",
+    "varian": [
+      {
+        "id": 308,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 2000,
+        "stok": 100,
+        "harga_normal": 4000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Putri-Ayu.webp",
+    "id_kategori": 7
+  },
+  {
+    "id": 74,
+    "name": "Risoles Mayo",
+    "varian": [
+      {
+        "id": 309,
+        "jumlah": null,
+        "nama_berat": "Pcs",
+        "harga": 3000,
+        "stok": 100,
+        "harga_normal": 6000
+      }
+    ],
+    "link_wa": 628977663923,
+    "link_shopee": null,
+    "images": "/berkah-ramadhan/assets/images/product/kue/Risoles-Mayo.webp",
+    "id_kategori": 7
+  },
+
+  {
+    "name": "Erigo Jogger Pants Morton Army - Celana Panjang Jogger Unisex",
+    "varian": [
+      {
+        "jumlah": null,
+        "nama_berat": "28",
+        "harga": 119999,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "30",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "32",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "34",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "36",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "38",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "40",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      }
+    ],
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/2LIzTXsicS",
+    "images": "https://down-id.img.susercontent.com/file/id-11134207-7rasb-m5cdtm6u6kd92a.webp",
+    "id_kategori": 5
+  },
+  {
+    "name": "Erigo Jogger Pants Jessie Black - Celana Panjang Jogger Unisex",
+    "varian": [
+      {
+        "jumlah": null,
+        "nama_berat": "28",
+        "harga": 119999,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "30",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "32",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "34",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "36",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "38",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      },
+      {
+        "jumlah": null,
+        "nama_berat": "40",
+        "harga": 143000,
+        "stok": 100,
+        "harga_normal": 450000
+      }
+    ],
+    "link_wa": null,
+    "link_shopee": "https://s.shopee.co.id/7KhfRSLHsp",
+    "images": "https://down-id.img.susercontent.com/file/id-11134207-7rasl-m5cj16xnyukg8e@resize_w900_nl.webp",
+    "id_kategori": 5
   }
 ]

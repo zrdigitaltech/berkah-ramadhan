@@ -1,13 +1,19 @@
 'use client';
+import Link from 'next/link';
 
 export default function Index() {
   return (
-    <footer>
-      <h3>Beli Sebelum Kehabisan!</h3>
+    <footer className="footers">
+      <h3>Buruan Beli Sebelum Kehabisan!</h3>
       {/* <p> Makanan enak buat mood kamu makin semangat lagi</p> */}
       <p className="copyright-text">
         <small>
-          Copyright &copy; 2022 - {new Date().getFullYear()}{' '}
+          {/* &copy; 2022 - {new Date().getFullYear()}{' '} */}
+          &copy; {new Date().getFullYear()}{' '}
+          <Link href="/" className="text-primary">
+            VandZ15
+          </Link>{' '}
+          By{' '}
           <a href="https://zrdevelopers.github.io/" target="_blank" className="text-primary">
             ZRDevelopers
           </a>

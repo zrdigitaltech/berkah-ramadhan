@@ -7,7 +7,7 @@ const SearchBar = (props) => {
   const { value, onChange, onSubmit } = props;
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="forms" onSubmit={onSubmit}>
       <div className="input-group">
         <BiSearch className="search-icon" />
         <input type="search" placeholder="Ketik disini ..." value={value} onChange={onChange} />
