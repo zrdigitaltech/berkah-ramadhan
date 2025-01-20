@@ -1,0 +1,419 @@
+[
+  {
+    "name": "Delfi Chic-Choc",
+    "varian": [
+      {
+        "id": 1,
+        "jumlah": 250,
+        "nama_berat": "gr",
+        "harga": 43000,
+        "stok": 0
+      },
+      {
+        "id": 2,
+        "jumlah": 500,
+        "nama_berat": "gr",
+        "harga": 83000,
+        "stok": 0
+      },
+      {
+        "id": 3,
+        "jumlah": 1,
+        "nama_berat": "kg",
+        "harga": 143000,
+        "stok": 0
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://shope.ee/7fCfxKZyvy",
+    "images": "/assets/images/product/delfi-chicchoc.webp",
+    "kategori": "cokelat"
+  },
+  {
+    "name": "Delfi Maltitos",
+    "varian": [
+      {
+        "id": 1,
+        "jumlah": 500,
+        "nama_berat": "gr",
+        "harga": 93000,
+        "stok": 0
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://shope.ee/3AkGpqq8FG",
+    "images": "/assets/images/product/delfi-maltitos.jpeg",
+    "kategori": "cokelat"
+  },
+  {
+    "name": "Delfi Almond",
+    "varian": [
+      {
+        "id": 1,
+        "jumlah": 500,
+        "nama_berat": "gr",
+        "harga": 96000,
+        "stok": 0
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": "https://shope.ee/3AkGpqq8FG",
+    "images": "/assets/images/product/delfi-almond.jpeg",
+    "kategori": "cokelat"
+  },
+  {
+    "name": "Delfi Cha-cha peanut/choco",
+    "varian": [
+      {
+        "id": 1,
+        "jumlah": 500,
+        "nama_berat": "gr",
+        "harga": 96000,
+        "stok": 0
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/cha-cha.jpeg",
+    "kategori": "cokelat"
+  },
+  {
+    "name": "Kacang Aroma",
+    "varian": [
+      {
+        "id": 1,
+        "jumlah": 500,
+        "nama_berat": "gr",
+        "harga": 60000,
+        "stok": 0
+      },
+      {
+        "id": 2,
+        "jumlah": 1,
+        "nama_berat": "kg",
+        "harga": 103000,
+        "stok": 0
+      }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/kacang-aroma.jpeg",
+    "kategori": "kacang"
+  },
+
+  {
+    "name": "EK1",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 0 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek1.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK2",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek2.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK3",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek3.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK4",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek4.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK5",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek5.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK6",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek6.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK7",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek7.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK8",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek8.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK9",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek9.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK10",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek10.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK11",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek11.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK12",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek12.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK13",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek13.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK14",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek14.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK15",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek15.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK16",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek16.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK17",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek17.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK18",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek18.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK19",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek19.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK20",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek20.jpeg",
+    "kategori": "fashion"
+  },
+  {
+    "name": "EK21",
+    "varian": [
+      { "id": 1, "jumlah": null, "nama_berat": "S", "harga": 70000, "stok": 100 },
+      { "id": 2, "jumlah": null, "nama_berat": "M", "harga": 70000, "stok": 100 },
+      { "id": 3, "jumlah": null, "nama_berat": "L", "harga": 70000, "stok": 100 },
+      { "id": 4, "jumlah": null, "nama_berat": "XL", "harga": 70000, "stok": 100 },
+      { "id": 5, "jumlah": null, "nama_berat": "XXL", "harga": 70000, "stok": 100 },
+      { "id": 6, "jumlah": null, "nama_berat": "XXL", "harga": 100000, "stok": 0 }
+    ],
+    "link_wa": 6281287799457,
+    "link_shopee": null,
+    "images": "/assets/images/product/fashion/kaos/ek1.jpeg",
+    "kategori": "fashion"
+  }
+]

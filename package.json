@@ -6,16 +6,26 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
+    "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
+    "format": "prettier --write './**/*.{js,scss,css, md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "next": "15.1.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
-    "@eslint/eslintrc": "^3"
+    "sass": "^1.83.4",
+    "react-floating-whatsapp": "^5.0.8",
+    "react-icons": "^5.4.0",
+    "react-medium-image-zoom": "^5.2.13",
+    "prettier": "^3.4.2",
+    "aos": "^2.3.4"
   }
 }

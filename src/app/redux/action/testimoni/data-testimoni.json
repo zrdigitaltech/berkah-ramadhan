@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/testimonials1.png",
+    "alt": "Sinergy Mechanical Electrical",
+    "nama": "Fiqih",
+    "position": "Pelanggan SiMeTric",
+    "description": "Recommanded banget nih SiMeTric. McB pembagi dalam rumah sering turun, tapi setelah makai jasa teknisi dari Sahabat Teknik MCB pembagi dalam rumah kami aman. Harganya juga sangat murah, Bergaransi juga wkwk."
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/testimonials2.png",
+    "alt": "Sinergy Mechanical Electrical",
+    "nama": "Jesica",
+    "position": "Pelanggan SiMeTric",
+    "description": "Saya mengira pengerjaan instalasi 1 jalur di rumah saya akan memakan waktu hingga 1 hari,tenyata sekitar 5 jam’an saja sudah rapih dan normal kembali,kembali hingga saat ini pun tidak bermasalah lagi.good job deh…."
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/testimonials3.png",
+    "alt": "Sinergy Mechanical Electrical",
+    "nama": "Firmansyah",
+    "position": "Pelanggan SiMeTric",
+    "description": "Sedikit Review Jasa dari SiMeTric, awalnya saya sedikit coba-coba karena sekitar 1-2 hari belakangan listrik saya mengalami kosleting atau induksi menurut teknisi nya. Bermula dari penggantian MCB . good joob"
+  }
+]
