@@ -532,7 +532,8 @@ header {
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .recipe-card img {
     // object-fit: scale-down;
-    height: 16.8rem;
+    height: auto; // 16.8rem;
+    max-height: 170px;
   }
 }
 
@@ -542,7 +543,8 @@ header {
     // max-height: 200px;
     // object-position: center;
     // object-fit: scale-down;
-    height: 19.4rem;
+    height: auto; //19.4rem;
+    max-height: 195px;
   }
 }
 // @media screen and (max-width: 320px) {
