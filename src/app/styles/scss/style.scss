@@ -528,7 +528,7 @@ header {
     // object-fit: scale-down;
     height: auto; // 14.4rem;
       max-height: 144px;
-      min-height: 144px;
+      min-height: 124px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
@@ -536,7 +536,7 @@ header {
     // object-fit: scale-down;
     height: auto; // 16.8rem;
     max-height: 167.5px;
-    min-height: 167.5px;
+    min-height: 147.5px;
   }
 }
 
@@ -548,7 +548,7 @@ header {
     // object-fit: scale-down;
     height: auto; //19.4rem;
     max-height: 192.5px;
-    min-height: 192.5px;
+    min-height: 172.5px;
   }
 }
 // @media screen and (max-width: 320px) {
