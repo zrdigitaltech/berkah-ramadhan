@@ -1,5 +1,6 @@
 import ReduxProvider from '@/app/redux/provider';
 import Head from 'next/head';
+import Script from "next/script";
 
 export const metadata = {
   // Basic metas
@@ -27,6 +28,11 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body>
+        <Script 
+          type='text/javascript' 
+          src='//backgroundrunway.com/a8/ff/81/a8ff8134566c16def4cbcd5103fa37d7.js'
+          strategy="afterInteractive"
+        />
         <ReduxProvider>
           {children}
           {/* <Scripts /> */}
