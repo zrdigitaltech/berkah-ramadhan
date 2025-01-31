@@ -1,4 +1,5 @@
 import ReduxProvider from '@/app/redux/provider';
+import Head from 'next/head';
 
 export const metadata = {
   // Basic metas
@@ -18,6 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="text/javascript"
+          src="//backgroundrunway.com/0f/2d/c5/0f2dc59c4c7876bd1607b776c607edfc.js"
+          async
+        />
+      </Head>
       <body>
         <ReduxProvider>
           {children}
