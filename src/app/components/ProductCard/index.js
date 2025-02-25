@@ -9,6 +9,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const ProductCard = ({ product, styles }) => {
   const [varians, setVarian] = useState(null);
   const [quantity, setQuantity] = useState(1); // Default quantity
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variable
 
   const handleVarian = (ID) => {
     const selectedVarian = product?.varian?.find((varian) => varian?.id === ID);
@@ -71,7 +72,11 @@ const ProductCard = ({ product, styles }) => {
       <div className='d--image'>
       <Zoom>
         <img
-          src={product?.images || "https://placehold.co/1024x1024"}
+          src={
+            product?.images?.startsWith('/assets/images/')
+              ? domain + product.images
+              : product?.images || "https://placehold.co/1024x1024"
+          }
           alt={product?.name}
           className={`${product?.varian?.every((v) => v?.stok === 0) ? 'out-of-stock' : ''}`}
         />

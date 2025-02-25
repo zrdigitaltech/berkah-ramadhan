@@ -3,13 +3,14 @@ import logo from '@/app/images/vandz15.png';
 import Link from 'next/link'; // Ensure Link is imported from next/link
 
 const Index = () => {
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variable
   return (
     <header>
       <div className="container">
         <nav className="navbar">
           <Link href="/" className="brand">
             <img
-              src="/berkah-ramadhan/assets/images/vandz15.png"
+              src={domain + "/assets/images/vandz15.png"}
               alt="Logo"
               className="brand-img"
             />
