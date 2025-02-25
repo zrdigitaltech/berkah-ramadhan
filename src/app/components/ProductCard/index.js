@@ -6,7 +6,9 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const ProductCard = ({ product, styles }) => {
+const ProductCard = (props) => {
+  const { product, styles, handleFormWhatsApp } = props;
+
   const [varians, setVarian] = useState(null);
   const [quantity, setQuantity] = useState(1); // Default quantity
   const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variable
@@ -260,18 +262,19 @@ const ProductCard = ({ product, styles }) => {
                   <button
                     className="btn btn-primary"
                     style={{ marginTop: '2rem' }}
-                    onClick={() =>
-                      window.open(
-                        `https://wa.me/${product?.link_wa}?text=Halo, saya ingin membeli ${product?.id_kategori === 7 ? 'Kue' : 'Produk'} ${product.name} ukuran ${
-                          varians?.nama_berat || product?.varian[0]?.nama_berat || ''
-                        } sebanyak ${quantity} pcs dengan ${quantity === 1 ? 'harga' : 'total harga'} Rp ${
-                          varians?.harga
-                            ? (varians?.harga * quantity)?.toLocaleString('id-ID')
-                            : product?.varian[0]?.harga.toLocaleString('id-ID')
-                        }. Mohon dikirimkan ke alamat [Isi Nama, No Hp dan Alamat Anda]. Terima kasih!`,
-                        '_blank'
-                      )
-                    }
+                    // onClick={() =>
+                    //   window.open(
+                    //     `https://wa.me/${product?.link_wa}?text=Halo, saya ingin membeli ${product?.id_kategori === 7 ? 'Kue' : 'Produk'} ${product.name} ukuran ${
+                    //       varians?.nama_berat || product?.varian[0]?.nama_berat || ''
+                    //     } sebanyak ${quantity} pcs dengan ${quantity === 1 ? 'harga' : 'total harga'} Rp ${
+                    //       varians?.harga
+                    //         ? (varians?.harga * quantity)?.toLocaleString('id-ID')
+                    //         : product?.varian[0]?.harga.toLocaleString('id-ID')
+                    //     }. Mohon dikirimkan ke alamat [Isi Nama, No Hp dan Alamat Anda]. Terima kasih!`,
+                    //     '_blank'
+                    //   )
+                    // }
+                    onClick={(e) => handleFormWhatsApp(e, product, varians, quantity)}
                     disabled={
                       product?.varian?.find((v) => v.id === varians?.id) ||
                       product?.varian?.every((v) => v?.stok === 0)

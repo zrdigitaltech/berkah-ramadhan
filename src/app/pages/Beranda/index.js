@@ -19,6 +19,9 @@ import { getListKategoris } from '@/app/redux/action/kategoris/creator';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'; // Impor CSS untuk animasi
 
+// modals
+import FormWhatsAppModal from '@/app/pages/Beranda/modals/formWhatsApp';
+
 export default function Index() {
   const searchResultsRef = useRef();
   const [query, setQuery] = useState('');
@@ -29,6 +32,11 @@ export default function Index() {
   const [isLoadingProducts, setIsLoadingProducts] = useState(true);
 
   const mainContent = useRef(null);
+
+  const [showFormWhatsApp, setShowFormWhatsApp] = useState(false);
+  const [products, setProducts] = useState({});
+  const [varians, setVarians] = useState({});
+  const [quantitys, setQuantitys] = useState({});
 
   const handleScrollDown = () => {
     const html = document.querySelector('html');
@@ -107,6 +115,20 @@ export default function Index() {
     }
   };
 
+  const handleFormWhatsApp = async (e, products, varians, quantitys) => {
+    setShowFormWhatsApp(true);
+    setProducts(products);
+    setVarians(varians);
+    setQuantitys(quantitys);
+  };
+
+  const handleCloseModal = () => {
+    setShowFormWhatsApp(false);
+    setProducts({});
+    setVarians({});
+    setQuantitys({});
+  };
+
   const filteredByCategory =
     selectedCategory === 'all'
       ? productList
@@ -153,6 +175,7 @@ export default function Index() {
           isLoading={isLoading}
           productList={filteredProducts}
           searchResultsRef={searchResultsRef}
+          handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)}
         />
       )}
       {/* Kontent - Cemilan untukmu hari ini */}
@@ -163,7 +186,7 @@ export default function Index() {
             Terlaris
           </h2>
           {/* Best Seller */}
-          <ProductTerlaris product={productTerlaris} isLoadingProducts={isLoadingProducts} />
+          <ProductTerlaris product={productTerlaris} isLoadingProducts={isLoadingProducts} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />
         </div>
         <div className="container">
           <h2 className="heading-2">Kamu Mungkin Suka</h2>
@@ -205,10 +228,14 @@ export default function Index() {
             </div>
           </div>
           {/* Produk List */}
-          <ProductList product={filteredByCategory} isLoadingProducts={isLoadingProducts} />
+          <ProductList product={filteredByCategory} isLoadingProducts={isLoadingProducts} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />
         </div>
       </section>
       <Footer />
+
+      {/* Modals */}
+      <FormWhatsAppModal show={showFormWhatsApp} onClose={handleCloseModal} products={products} varians={varians} quantitys={quantitys} />
+
       <FloatingWhatsApp
         avatar={floatingWhatsAppList?.avatar}
         phoneNumber={floatingWhatsAppList?.phone_number}

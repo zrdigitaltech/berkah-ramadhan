@@ -4,7 +4,9 @@ import ProductCard from '@/app/components/ProductCard';
 import Skeleton from 'react-loading-skeleton'; // Import Skeleton component
 import { Fragment } from 'react';
 
-const ProductList = ({ product, isLoadingProducts }) => {
+const ProductList = (props) => {
+  const { product, isLoadingProducts, handleFormWhatsApp, } = props
+
   return (
     <Fragment>
       {isLoadingProducts ? (
@@ -22,7 +24,7 @@ const ProductList = ({ product, isLoadingProducts }) => {
         // Render actual products if available
         <div id="recipeList" className="recipe-list">
           {product.map((prod, idx) => (
-            <ProductCard product={prod} key={idx} />
+            <ProductCard product={prod} key={idx} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />
           ))}
         </div>
       ) : (

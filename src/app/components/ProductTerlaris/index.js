@@ -4,7 +4,8 @@ import ProductCard from '@/app/components/ProductCard';
 import Skeleton from 'react-loading-skeleton'; // Import Skeleton component
 import { Fragment } from 'react';
 
-const ProductList = ({ product, isLoadingProducts }) => {
+const ProductList = (props) => {
+  const { product, isLoadingProducts, handleFormWhatsApp } = props;
   return (
     <Fragment>
       {isLoadingProducts ? (
@@ -37,6 +38,7 @@ const ProductList = ({ product, isLoadingProducts }) => {
                 flexShrink: '0',
                 width: '200px'
               }}
+              handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)}
             />
           ))}
         </div>

@@ -4,7 +4,7 @@ import React from 'react';
 import ProductList from '@/app/components/ProductList';
 
 const SearchResults = (props) => {
-  const { keyword, productList, isLoading, searchResultsRef } = props;
+  const { keyword, productList, isLoading, searchResultsRef, handleFormWhatsApp } = props;
 
   return (
     <section className="recipes recipes-search-results" ref={searchResultsRef}>
@@ -14,7 +14,7 @@ const SearchResults = (props) => {
           {productList && <span className="amount">({productList?.length})</span>}
         </h2>
         {isLoading && <p>Tunggu sebentar...</p>}
-        {productList && <ProductList product={productList} />}
+        {productList && <ProductList product={productList} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />}
       </div>
     </section>
   );

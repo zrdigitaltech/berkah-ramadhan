@@ -817,3 +817,20 @@ header {
   justify-content: center;
   border-bottom: 1px solid #f0f0f0;
 }
+
+// Define spacing scale
+$spacing-values: (
+  0: 0rem,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
+// Generate margin-bottom classes
+@each $key, $value in $spacing-values {
+  .mb-#{$key} {
+    margin-bottom: $value !important;
+  }
+}
