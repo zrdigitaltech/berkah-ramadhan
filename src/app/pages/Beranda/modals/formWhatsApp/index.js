@@ -4,11 +4,13 @@ import './formWhatsApp.scss';
 
 const Index = (props) => {
   const { show, onClose, products, varians, quantitys } = props;
-  console.log('as', products)
+
   const [dataForm, setDataForm] = useState({
     nama: '',
     no_hp: '',
     alamat: '',
+    metode_pembayaran: 'Transfer Bank',
+    catatan: '',
   });
 
   const [error, setError] = useState({});
@@ -33,7 +35,7 @@ const Index = (props) => {
   };
 
   const handlePesanViaWhatsApp = () => {
-    const { nama, no_hp, alamat } = dataForm;
+    const { nama, no_hp, alamat, metode_pembayaran, catatan } = dataForm;
 
     let newError = {};
     if (!nama) newError.nama = 'Nama harus diisi';
@@ -42,7 +44,11 @@ const Index = (props) => {
     } else if (!validateNoHp(no_hp)) {
       newError.no_hp = 'No Hp harus berupa angka dan minimal 10 karakter';
     }
-    if (!alamat) newError.alamat = 'Alamat harus diisi';
+    if (!alamat) {
+      newError.alamat = 'Alamat harus diisi';
+    } else if (alamat.length < 20) {
+      newError.alamat = 'Alamat harus minimal 20 karakter';
+    }    
 
     if (Object.keys(newError).length > 0) {
       setError(newError);
@@ -58,7 +64,7 @@ const Index = (props) => {
       ? (varians.harga * quantitys)?.toLocaleString('id-ID')
       : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0';
 
-    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran}\nJumlah: ${quantitys} pcs\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\n\nMohon konfirmasinya. Terima kasih!`;
+    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran}\nJumlah: ${quantitys} pcs\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
     const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -71,6 +77,8 @@ const Index = (props) => {
       nama: '',
       no_hp: '',
       alamat: '',
+      metode_pembayaran: 'Transfer Bank',
+      catatan: '',
     });
     setError({});
     onClose();
@@ -121,6 +129,32 @@ const Index = (props) => {
                 onChange={handleChange}
               />
               {error.alamat && <small className="form-text text-danger">{error.alamat}</small>}
+            </div>
+
+            <div className="mb-2">
+              <label>Metode Pembayaran</label>
+              <select
+                className="form-control"
+                name="metode_pembayaran"
+                value={dataForm.metode_pembayaran}
+                onChange={handleChange}
+              >
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="COD">Bayar di Tempat (COD)</option>
+                <option value="E-Wallet">E-Wallet (OVO, Dana, GoPay)</option>
+              </select>
+            </div>
+
+            <div className="mb-2">
+              <label>Catatan Tambahan</label>
+              <textarea
+                className="form-control"
+                rows="2"
+                name="catatan"
+                placeholder="Contoh: Tolong bungkus dengan rapi."
+                value={dataForm.catatan}
+                onChange={handleChange}
+              />
             </div>
           </form>
         </Fragment>
