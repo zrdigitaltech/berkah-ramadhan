@@ -126,9 +126,6 @@ const Index = (props) => {
                   : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}</span>
               </div>
             </div>
-
-
-
             <hr className="mb-4" />
             <div className="mb-3">
               <h4>Informasi Pemesanan :</h4>
@@ -203,7 +200,7 @@ const Index = (props) => {
       modalFooter={
         <Fragment>
           <button onClick={handlePesanViaWhatsApp} type="button" className="btn btn-primary m-auto">
-            Pesan Via WhatsApp
+            Pemesanan Via WhatsApp
           </button>
         </Fragment>
       }
