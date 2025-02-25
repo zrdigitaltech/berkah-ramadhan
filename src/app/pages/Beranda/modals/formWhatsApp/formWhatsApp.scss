@@ -42,3 +42,49 @@ select {
     transform: translate(-50%, -50%);
   }
 }
+
+// Table
+.table-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: auto;
+
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      // text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    td {
+      .product-info {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; // Maksimal 2 baris
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal; // Pastikan teks bisa wrapping
+        max-width: 200px; // Sesuaikan sesuai kebutuhan
+      }
+    }
+  }
+
+  .total-harga {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+

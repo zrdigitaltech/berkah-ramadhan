@@ -99,23 +99,36 @@ const Index = (props) => {
             <div className="mb-3">
               <h4>Produk detail :</h4>
             </div>
-            <p className="product-info">
-              <b>Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}:</b>{' '}
-              <span title={`${products?.name || '-'}`}>{products?.name || '-'}</span>
-            </p>
+            <div className="table-container">
+              <table className="custom-table">
+                <thead>
+                  <tr>
+                    <th className='text-left'>Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}</th>
+                    <th className='text-center'>Ukuran</th>
+                    <th className='text-center'>Jumlah</th>
+                    <th className='text-center'>Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className='text-left' title={`${products?.name || '-'}`}><p className='product-info'>{products?.name || '-'}</p></td>
+                    <td className='text-center'>{varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}</td>
+                    <td className='text-center'>{quantitys}</td>
+                    <td className='text-right'>{products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}</td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <p>
-              <b>Ukuran:</b> {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}
-            </p>
-            <p>
-              <b>Jumlah:</b> {quantitys}
-            </p>
-            <p className="mb-4">
-              <b>{quantitys === 1 ? 'Harga' : 'Total Harga'}:</b> Rp{' '}
-              {varians?.harga
-                ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-                : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
-            </p>
+              <div className="total-harga">
+                <b>Total Harga:</b> Rp{' '}
+                <span>{varians?.harga
+                  ? (varians.harga * quantitys)?.toLocaleString('id-ID')
+                  : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}</span>
+              </div>
+            </div>
+
+
+
             <hr className="mb-4" />
             <div className="mb-3">
               <h4>Informasi Pemesanan :</h4>
