@@ -38,7 +38,11 @@ const Index = (props) => {
     const { nama, no_hp, alamat, metode_pembayaran, catatan } = dataForm;
 
     let newError = {};
-    if (!nama) newError.nama = 'Nama harus diisi';
+    if (!nama) {
+      newError.nama = 'Nama harus diisi';
+    } else if (nama.length < 5) {
+      newError.nama = 'Nama harus minimal 5 karakter';
+    }
     if (!no_hp) {
       newError.no_hp = 'No Hp harus diisi';
     } else if (!validateNoHp(no_hp)) {
