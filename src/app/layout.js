@@ -1,6 +1,6 @@
 import ReduxProvider from '@/app/redux/provider';
 import Head from 'next/head';
-import Script from "next/script";
+import Script from 'next/script';
 
 export const metadata = {
   // Basic metas
@@ -20,8 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-      </Head>
+      <Head></Head>
       <body>
         <ReduxProvider>
           {children}

@@ -527,8 +527,8 @@ header {
   .recipe-card img {
     // object-fit: scale-down;
     height: auto; // 14.4rem;
-      max-height: 144px;
-      min-height: 124px;
+    max-height: 144px;
+    min-height: 124px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
@@ -833,4 +833,11 @@ $spacing-values: (
   .mb-#{$key} {
     margin-bottom: $value !important;
   }
+}
+
+.product-info {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

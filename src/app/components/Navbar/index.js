@@ -9,11 +9,7 @@ const Index = () => {
       <div className="container">
         <nav className="navbar">
           <Link href="/" className="brand">
-            <img
-              src={domain + "/assets/images/vandz15.png"}
-              alt="Logo"
-              className="brand-img"
-            />
+            <img src={domain + '/assets/images/vandz15.png'} alt="Logo" className="brand-img" />
           </Link>
           <ul className="nav-list">
             <li className="nav-item">

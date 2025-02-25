@@ -1,4 +1,3 @@
-
 import { Fragment, useEffect } from 'react';
 import './modals.scss'; // Import SCSS
 

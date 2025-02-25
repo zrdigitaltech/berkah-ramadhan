@@ -38,7 +38,9 @@ const ProductList = (props) => {
                 flexShrink: '0',
                 width: '200px'
               }}
-              handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)}
+              handleFormWhatsApp={(e, products, varians, quantitys) =>
+                handleFormWhatsApp(e, products, varians, quantitys)
+              }
             />
           ))}
         </div>

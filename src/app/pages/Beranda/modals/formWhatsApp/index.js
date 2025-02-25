@@ -10,7 +10,7 @@ const Index = (props) => {
     no_hp: '',
     alamat: '',
     metode_pembayaran: 'Transfer Bank',
-    catatan: '',
+    catatan: ''
   });
 
   const [error, setError] = useState({});
@@ -20,13 +20,13 @@ const Index = (props) => {
 
     setDataForm((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: value
     }));
 
     // Hapus error ketika input diisi
     setError((prev) => ({
       ...prev,
-      [name]: '',
+      [name]: ''
     }));
   };
 
@@ -52,7 +52,7 @@ const Index = (props) => {
       newError.alamat = 'Alamat harus diisi';
     } else if (alamat.length < 20) {
       newError.alamat = 'Alamat harus minimal 20 karakter';
-    }    
+    }
 
     if (Object.keys(newError).length > 0) {
       setError(newError);
@@ -68,7 +68,7 @@ const Index = (props) => {
       ? (varians.harga * quantitys)?.toLocaleString('id-ID')
       : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0';
 
-    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran}\nJumlah: ${quantitys} pcs\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
+    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran}\nJumlah: ${quantitys}\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
     const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -82,7 +82,7 @@ const Index = (props) => {
       no_hp: '',
       alamat: '',
       metode_pembayaran: 'Transfer Bank',
-      catatan: '',
+      catatan: ''
     });
     setError({});
     onClose();
@@ -96,6 +96,30 @@ const Index = (props) => {
       modalBody={
         <Fragment>
           <form>
+            <div className="mb-3">
+              <h4>Produk detail :</h4>
+            </div>
+            <p className="product-info">
+              <b>Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}:</b>{' '}
+              <span title={`${products?.name || '-'}`}>{products?.name || '-'}</span>
+            </p>
+
+            <p>
+              <b>Ukuran:</b> {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}
+            </p>
+            <p>
+              <b>Jumlah:</b> {quantitys}
+            </p>
+            <p className="mb-4">
+              <b>{quantitys === 1 ? 'Harga' : 'Total Harga'}:</b> Rp{' '}
+              {varians?.harga
+                ? (varians.harga * quantitys)?.toLocaleString('id-ID')
+                : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
+            </p>
+            <hr className="mb-4" />
+            <div className="mb-3">
+              <h4>Informasi Pemesanan :</h4>
+            </div>
             <div className="mb-2">
               <label>Nama Lengkap</label>
               <input

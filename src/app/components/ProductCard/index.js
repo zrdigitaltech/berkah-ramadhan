@@ -71,18 +71,18 @@ const ProductCard = (props) => {
           -{calculateDiscount(firstVarian?.harga_normal, firstVarian?.harga)}%
         </div>
       )}
-      <div className='d--image'>
-      <Zoom>
-        <img
-          src={
-            product?.images?.startsWith('/assets/images/')
-              ? domain + product.images
-              : product?.images || "https://placehold.co/1024x1024"
-          }
-          alt={product?.name}
-          className={`${product?.varian?.every((v) => v?.stok === 0) ? 'out-of-stock' : ''}`}
-        />
-        {/* <LazyLoadImage
+      <div className="d--image">
+        <Zoom>
+          <img
+            src={
+              product?.images?.startsWith('/assets/images/')
+                ? domain + product.images
+                : product?.images || 'https://placehold.co/1024x1024'
+            }
+            alt={product?.name}
+            className={`${product?.varian?.every((v) => v?.stok === 0) ? 'out-of-stock' : ''}`}
+          />
+          {/* <LazyLoadImage
           src={product?.images}
           alt={product?.name}
           effect="blur" // Optional: Add a blur effect while loading
@@ -93,7 +93,7 @@ const ProductCard = (props) => {
             e.target.src = 'https://placehold.co/1024x1024';
           }} // Important for preventing infinite loops
         /> */}
-      </Zoom>
+        </Zoom>
       </div>
       <div
         className={`recipe-body ${

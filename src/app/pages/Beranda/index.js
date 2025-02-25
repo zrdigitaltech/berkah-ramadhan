@@ -175,7 +175,9 @@ export default function Index() {
           isLoading={isLoading}
           productList={filteredProducts}
           searchResultsRef={searchResultsRef}
-          handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)}
+          handleFormWhatsApp={(e, products, varians, quantitys) =>
+            handleFormWhatsApp(e, products, varians, quantitys)
+          }
         />
       )}
       {/* Kontent - Cemilan untukmu hari ini */}
@@ -186,7 +188,13 @@ export default function Index() {
             Terlaris
           </h2>
           {/* Best Seller */}
-          <ProductTerlaris product={productTerlaris} isLoadingProducts={isLoadingProducts} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />
+          <ProductTerlaris
+            product={productTerlaris}
+            isLoadingProducts={isLoadingProducts}
+            handleFormWhatsApp={(e, products, varians, quantitys) =>
+              handleFormWhatsApp(e, products, varians, quantitys)
+            }
+          />
         </div>
         <div className="container">
           <h2 className="heading-2">Kamu Mungkin Suka</h2>
@@ -228,13 +236,25 @@ export default function Index() {
             </div>
           </div>
           {/* Produk List */}
-          <ProductList product={filteredByCategory} isLoadingProducts={isLoadingProducts} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />
+          <ProductList
+            product={filteredByCategory}
+            isLoadingProducts={isLoadingProducts}
+            handleFormWhatsApp={(e, products, varians, quantitys) =>
+              handleFormWhatsApp(e, products, varians, quantitys)
+            }
+          />
         </div>
       </section>
       <Footer />
 
       {/* Modals */}
-      <FormWhatsAppModal show={showFormWhatsApp} onClose={handleCloseModal} products={products} varians={varians} quantitys={quantitys} />
+      <FormWhatsAppModal
+        show={showFormWhatsApp}
+        onClose={handleCloseModal}
+        products={products}
+        varians={varians}
+        quantitys={quantitys}
+      />
 
       <FloatingWhatsApp
         avatar={floatingWhatsAppList?.avatar}

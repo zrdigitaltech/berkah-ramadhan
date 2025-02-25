@@ -14,7 +14,14 @@ const SearchResults = (props) => {
           {productList && <span className="amount">({productList?.length})</span>}
         </h2>
         {isLoading && <p>Tunggu sebentar...</p>}
-        {productList && <ProductList product={productList} handleFormWhatsApp={(e, products, varians, quantitys) => handleFormWhatsApp(e, products, varians, quantitys)} />}
+        {productList && (
+          <ProductList
+            product={productList}
+            handleFormWhatsApp={(e, products, varians, quantitys) =>
+              handleFormWhatsApp(e, products, varians, quantitys)
+            }
+          />
+        )}
       </div>
     </section>
   );
