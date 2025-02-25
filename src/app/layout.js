@@ -21,18 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <script
-          type="text/javascript"
-          src="//backgroundrunway.com/0f/2d/c5/0f2dc59c4c7876bd1607b776c607edfc.js"
-          async
-        />
       </Head>
       <body>
-        <Script 
-          type='text/javascript' 
-          src='//backgroundrunway.com/a8/ff/81/a8ff8134566c16def4cbcd5103fa37d7.js'
-          strategy="afterInteractive"
-        />
         <ReduxProvider>
           {children}
           {/* <Scripts /> */}
