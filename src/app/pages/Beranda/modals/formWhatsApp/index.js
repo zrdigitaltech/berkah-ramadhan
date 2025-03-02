@@ -63,20 +63,21 @@ const Index = (props) => {
     const phoneNumber = products?.link_wa || '-'; // Pastikan nomor ada
     const productName = products?.name || '-';
     const kategori = products?.id_kategori === 7 ? 'Kue' : 'Produk';
-    const ukuran = varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
+    const ukuran = varians?.jumlah ? varians?.jumlah + " " + varians?.nama_berat || products?.varian?.[0]?.nama_berat : varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
     const harga = varians?.harga
       ? (varians.harga * quantitys)?.toLocaleString('id-ID')
       : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0';
 
-    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran}\nJumlah: ${quantitys}\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
+    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran} \nJumlah: ${quantitys}\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
     const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(waLink, '_blank');
-    handleClose();
+    
+    resetForm();
   };
 
-  const handleClose = () => {
+  const resetForm = async() => {
     setDataForm({
       nama: '',
       no_hp: '',
@@ -85,6 +86,10 @@ const Index = (props) => {
       catatan: ''
     });
     setError({});
+  }
+
+  const handleClose = () => {
+    resetForm();
     onClose();
   };
 
@@ -112,9 +117,13 @@ const Index = (props) => {
                 <tbody>
                   <tr>
                     <td className='text-left' title={`${products?.name || '-'}`}><p className='product-info'>{products?.name || '-'}</p></td>
-                    <td className='text-center'>{varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}</td>
+                    <td className='text-center'>{varians?.jumlah} {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}</td>
                     <td className='text-center'>{quantitys}</td>
-                    <td className='text-right'>{products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}</td>
+                    <td className='text-right'>
+                    {varians?.harga
+                      ? (varians.harga * quantitys)?.toLocaleString('id-ID')
+                      : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
+                    </td>
                   </tr>
                 </tbody>
               </table>
