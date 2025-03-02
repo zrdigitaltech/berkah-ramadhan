@@ -13,7 +13,7 @@ export default function Index() {
           <Link href="/" className="text-primary">
             VandZ15
           </Link>{' '}
-          By{' '}
+          Published by{' '}
           <a href="https://zrdevelopers.github.io/" target="_blank" className="text-primary">
             ZRDevelopers
           </a>
