@@ -120,9 +120,10 @@ const Index = (props) => {
                     <td className='text-center'>{varians?.jumlah} {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}</td>
                     <td className='text-center'>{quantitys}</td>
                     <td className='text-right'>
-                    {varians?.harga
-                      ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-                      : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
+                      {varians?.harga?.toLocaleString('id-ID') || '0'}
+                      {/* {varians?.harga
+                        ? (varians.harga * quantitys)?.toLocaleString('id-ID')
+                        : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'} */}
                     </td>
                   </tr>
                 </tbody>
