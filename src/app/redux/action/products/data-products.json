@@ -97,47 +97,15 @@
         "nama_berat": "kg",
         "harga": 60000,
         "stok": 100,
-        "harga_normal": 80000
+        "harga_normal": 70000
       },
       {
         "id": 8,
         "jumlah": 1,
         "nama_berat": "kg",
-        "harga": 102000,
+        "harga": 95000,
         "stok": 100,
-        "harga_normal": 120000
-      },
-      {
-        "id": 88,
-        "jumlah": 2,
-        "nama_berat": "kg",
-        "harga": 190000,
-        "stok": 100,
-        "harga_normal": 204000
-      },
-      {
-        "id": 888,
-        "jumlah": 3,
-        "nama_berat": "kg",
-        "harga": 280000,
-        "stok": 100,
-        "harga_normal": 300000
-      },
-      {
-        "id": 888,
-        "jumlah": 4,
-        "nama_berat": "kg",
-        "harga": 368000,
-        "stok": 100,
-        "harga_normal": 396000
-      },
-      {
-        "id": 888,
-        "jumlah": 5,
-        "nama_berat": "kg",
-        "harga": 455000,
-        "stok": 100,
-        "harga_normal": 490000
+        "harga_normal": 110000
       }
     ],
     "link_wa": 6281228883616,
