@@ -8,8 +8,9 @@ const Index = (props) => {
   const [dataForm, setDataForm] = useState({
     nama: '',
     no_hp: '',
+    metode_pengiriman: '',
     alamat: '',
-    metode_pembayaran: 'Transfer Bank',
+    metode_pembayaran: '',
     catatan: ''
   });
 
@@ -35,58 +36,100 @@ const Index = (props) => {
   };
 
   const handlePesanViaWhatsApp = () => {
-    const { nama, no_hp, alamat, metode_pembayaran, catatan } = dataForm;
-
+    const { nama, no_hp, metode_pengiriman, alamat, metode_pembayaran, catatan } = dataForm;
     let newError = {};
+
+    // Validasi Nama
     if (!nama) {
       newError.nama = 'Nama harus diisi';
     } else if (nama.length < 5) {
       newError.nama = 'Nama harus minimal 5 karakter';
     }
+
+    // Validasi No HP
     if (!no_hp) {
       newError.no_hp = 'No Hp harus diisi';
     } else if (!validateNoHp(no_hp)) {
       newError.no_hp = 'No Hp harus berupa angka dan minimal 10 karakter';
     }
-    if (!alamat) {
-      newError.alamat = 'Alamat harus diisi';
-    } else if (alamat.length < 20) {
-      newError.alamat = 'Alamat harus minimal 20 karakter';
+
+    // Validasi Metode Pengiriman
+    if (!metode_pengiriman) {
+      newError.metode_pengiriman = 'Metode Pengiriman harus dipilih';
     }
 
+    // Validasi Alamat jika metode pengiriman adalah "Dikirim"
+    if (metode_pengiriman === 'Dikirim') {
+      if (!alamat) {
+        newError.alamat = 'Alamat harus diisi';
+      } else if (alamat.length < 20) {
+        newError.alamat = 'Alamat harus minimal 20 karakter';
+      }
+    }
+
+    // Validasi Metode Pembayaran
+    if (!metode_pembayaran) {
+      newError.metode_pembayaran = 'Metode Pembayaran harus dipilih';
+    }
+
+    // Jika ada error, set state dan hentikan proses
     if (Object.keys(newError).length > 0) {
       setError(newError);
       return;
     }
 
-    const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variable
-    const phoneNumber = products?.link_wa || '-'; // Pastikan nomor ada
+    // Pastikan variabel produk tidak undefined/null
+    const domain = process.env.NEXT_PUBLIC_DOMAIN || 'Berkah Ramadhan';
+    const phoneNumber = products?.link_wa || '-';
     const productName = products?.name || '-';
     const kategori = products?.id_kategori === 7 ? 'Kue' : 'Produk';
-    const ukuran = varians?.jumlah ? varians?.jumlah + " " + varians?.nama_berat || products?.varian?.[0]?.nama_berat : varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
-    const harga = varians?.harga
-      ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-      : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0';
+    const ukuran = varians?.jumlah
+      ? `${varians.jumlah} ${varians.nama_berat || products?.varian?.[0]?.nama_berat || '-'}`
+      : varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
+    const harga = varians?.harga ? `Rp ${varians.harga.toLocaleString('id-ID')}` : 'Rp 0';
+    const total_harga =
+      varians?.harga && quantitys
+        ? `Rp ${(varians.harga * quantitys).toLocaleString('id-ID')}`
+        : '';
 
-    const message = `Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:\nNama ${kategori}: ${productName}\nUkuran: ${ukuran} \nJumlah: ${quantitys}\n${quantitys === 1 ? 'Harga' : 'Total Harga'}: Rp ${harga}\n\nInformasi Pemesanan:\nNama Lengkap: ${nama}\nNo HP: ${no_hp}\nAlamat: ${alamat}\nMetode Pembayaran: ${metode_pembayaran}\nCatatan: ${catatan || '-'}\n\nMohon konfirmasinya. Terima kasih!`;
+    // Format pesan
+    const message = `
+Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:
 
+Nama ${kategori}: ${productName}
+Ukuran: ${ukuran}
+Jumlah: ${quantitys}
+Harga: ${harga}
+${quantitys >= 2 ? `Total Harga: ${total_harga}` : ''}
+
+Informasi Pemesanan:
+Nama Lengkap: ${nama}
+No HP: ${no_hp}
+Metode Pengiriman : ${metode_pengiriman}
+Alamat: ${metode_pengiriman === 'Dikirim' ? alamat : '-'}
+Metode Pembayaran: ${metode_pembayaran}
+Catatan: ${catatan || '-'}
+
+Mohon konfirmasinya. Terima kasih!
+  `.trim();
+
+    // Encode message dan buka WhatsApp
     const encodedMessage = encodeURIComponent(message);
     const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(waLink, '_blank');
-    
+
+    // Reset form setelah sukses
     resetForm();
   };
 
-  const resetForm = async() => {
-    setDataForm({
-      nama: '',
-      no_hp: '',
-      alamat: '',
-      metode_pembayaran: 'Transfer Bank',
-      catatan: ''
-    });
+  const resetForm = async () => {
+    setDataForm((prev) => ({
+      ...prev,
+      metode_pengiriman: '',
+      metode_pembayaran: ''
+    }));
     setError({});
-  }
+  };
 
   const handleClose = () => {
     resetForm();
@@ -108,32 +151,36 @@ const Index = (props) => {
               <table className="custom-table">
                 <thead>
                   <tr>
-                    <th className='text-left'>Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}</th>
-                    <th className='text-center'>Ukuran</th>
-                    <th className='text-center'>Jumlah</th>
-                    <th className='text-center'>Harga</th>
+                    <th className="text-left">
+                      Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}
+                    </th>
+                    <th className="text-center">Ukuran</th>
+                    <th className="text-center">Jumlah</th>
+                    <th className="text-center">Harga</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className='text-left' title={`${products?.name || '-'}`}><p className='product-info'>{products?.name || '-'}</p></td>
-                    <td className='text-center'>{varians?.jumlah} {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}</td>
-                    <td className='text-center'>{quantitys}</td>
-                    <td className='text-right'>
-                      {varians?.harga?.toLocaleString('id-ID') || '0'}
-                      {/* {varians?.harga
-                        ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-                        : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'} */}
+                    <td className="text-left" title={`${products?.name || '-'}`}>
+                      <p className="product-info">{products?.name || '-'}</p>
                     </td>
+                    <td className="text-center">
+                      {varians?.jumlah}{' '}
+                      {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}
+                    </td>
+                    <td className="text-center">{quantitys}</td>
+                    <td className="text-right">{varians?.harga?.toLocaleString('id-ID') || '0'}</td>
                   </tr>
                 </tbody>
               </table>
 
               <div className="total-harga">
                 <b>Total Harga:</b> Rp{' '}
-                <span>{varians?.harga
-                  ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-                  : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}</span>
+                <span>
+                  {varians?.harga
+                    ? (varians.harga * quantitys)?.toLocaleString('id-ID')
+                    : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
+                </span>
               </div>
             </div>
             <hr className="mb-4" />
@@ -166,18 +213,37 @@ const Index = (props) => {
               {error.no_hp && <small className="form-text text-danger">{error.no_hp}</small>}
             </div>
 
-            <div>
-              <label>Alamat</label>
-              <textarea
+            <div className="mb-2">
+              <label>Metode Pengiriman</label>
+              <select
                 className="form-control"
-                rows="4"
-                name="alamat"
-                placeholder="Contoh : Jalan Sudirman No. 123, Jakarta"
-                value={dataForm.alamat}
+                name="metode_pengiriman"
+                value={dataForm.metode_pengiriman}
                 onChange={handleChange}
-              />
-              {error.alamat && <small className="form-text text-danger">{error.alamat}</small>}
+              >
+                <option value="">Pilih Metode Pengiriman</option>
+                <option value="Ambil di Toko">Ambil di Toko</option>
+                <option value="Dikirim">Dikirim</option>
+              </select>
+              {error.metode_pengiriman && (
+                <small className="form-text text-danger">{error.metode_pengiriman}</small>
+              )}
             </div>
+
+            {dataForm.metode_pengiriman === 'Dikirim' && (
+              <div>
+                <label>Alamat</label>
+                <textarea
+                  className="form-control"
+                  rows="4"
+                  name="alamat"
+                  placeholder="Contoh : Jalan Sudirman No. 123, Jakarta"
+                  value={dataForm.alamat}
+                  onChange={handleChange}
+                />
+                {error.alamat && <small className="form-text text-danger">{error.alamat}</small>}
+              </div>
+            )}
 
             <div className="mb-2">
               <label>Metode Pembayaran</label>
@@ -187,10 +253,16 @@ const Index = (props) => {
                 value={dataForm.metode_pembayaran}
                 onChange={handleChange}
               >
+                <option value="">Pilih Metode Pembayaran</option>
                 <option value="Transfer Bank">Transfer Bank</option>
-                <option value="COD">Bayar di Tempat (COD)</option>
+                {dataForm.metode_pengiriman !== 'Dikirim' && (
+                  <option value="COD">Bayar di Tempat (COD)</option>
+                )}
                 <option value="E-Wallet">E-Wallet (OVO, Dana, GoPay)</option>
               </select>
+              {error.metode_pembayaran && (
+                <small className="form-text text-danger">{error.metode_pembayaran}</small>
+              )}
             </div>
 
             <div className="mb-2">
