@@ -16,7 +16,7 @@ const Index = () => {
               <Link
                 target="_blank"
                 className="nav-link"
-                href="https://wa.me/6281287799457?text=Halo,pesan berkah-ramadhan. Ini alamat kirim saya`"
+                href="https://wa.me/6281228883616?text=Halo,pesan berkah-ramadhan. Ini alamat kirim saya`"
               >
                 WhatsApp kami
               </Link>
