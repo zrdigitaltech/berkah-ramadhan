@@ -9,7 +9,7 @@ export default function Index() {
       <p className="copyright-text">
         <small>
           {/* &copy; 2022 - {new Date().getFullYear()}{' '} */}
-          &copy; {new Date().getFullYear()}{' '}
+          &copy; 2024 - {new Date().getFullYear()}{' '}
           <Link href="/" className="text-primary">
             VandZ15
           </Link>{' '}
