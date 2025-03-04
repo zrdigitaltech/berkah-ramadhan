@@ -83,6 +83,7 @@ const Index = (props) => {
     const phoneNumber = products?.link_wa || '-';
     const productName = products?.name || '-';
     const kategori = products?.id_kategori === 7 ? 'Kue' : 'Produk';
+    const teksUkuran = products?.id_kategori === 1 || products?.id_kategori === 2 || products?.id_kategori === 7 ? "Varian" : "Ukuran";
     const ukuran = varians?.jumlah
       ? `${varians.jumlah} ${varians.nama_berat || products?.varian?.[0]?.nama_berat || '-'}`
       : varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
@@ -97,7 +98,7 @@ const Index = (props) => {
 Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:
 
 Nama ${kategori}: ${productName}
-Ukuran: ${ukuran}
+${teksUkuran}: ${ukuran}
 Jumlah: ${quantitys}
 Harga: ${harga}
 ${quantitys >= 2 ? `Total Harga: ${total_harga}` : ''}
