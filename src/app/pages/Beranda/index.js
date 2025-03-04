@@ -104,6 +104,7 @@ export default function Index() {
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
+    setVisibleCount(12);
 
     // Scroll back to the top with an offset
     const element = document.getElementById('recipeList');
@@ -145,12 +146,21 @@ export default function Index() {
           .filter((product) => product.id_kategori === selectedCategory)
           .slice(0, visibleCount); // Batasi jumlah produk untuk kategori tertentu
 
+  const shouldShowLoadMoreButton =
+    (selectedCategory === 'all' && productList.length > visibleCount) ||
+    (selectedCategory !== 'all' &&
+      productList.filter((product) => product.id_kategori === selectedCategory).length >
+        visibleCount);
+
   useEffect(() => {
     fetchFloatingWhatsApp();
     fetchProducts();
     fetchKategoris();
     fetchTerlarisProducts();
   }, []);
+
+  console.log('a', filteredByCategory?.length);
+  console.log('b', productList?.length);
 
   return (
     <Fragment>
@@ -254,7 +264,9 @@ export default function Index() {
               handleFormWhatsApp(e, products, varians, quantitys)
             }
           />
-          {productList?.length > visibleCount && (
+
+          {/* {productList?.length > visibleCount && ( */}
+          {shouldShowLoadMoreButton && (
             <div className="text-center mt-10">
               <button onClick={handleLoadMore} className="btn btn-primary" style={{ width: '50%' }}>
                 Muat Lebih Banyak
