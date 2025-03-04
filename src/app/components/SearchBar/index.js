@@ -6,8 +6,20 @@ import { BiSearch } from 'react-icons/bi';
 const SearchBar = (props) => {
   const { value, onChange, onSubmit } = props;
 
-  const texts = ["K", "Ke", "Ket", "Keti", "Ketik", "Ketik d", "Ketik di", "Ketik dis", "Ketik disi", "Ketik disin", "Ketik disini ..."];
-  const [placeholder, setPlaceholder] = useState("");
+  const texts = [
+    'K',
+    'Ke',
+    'Ket',
+    'Keti',
+    'Ketik',
+    'Ketik d',
+    'Ketik di',
+    'Ketik dis',
+    'Ketik disi',
+    'Ketik disin',
+    'Ketik disini ...'
+  ];
+  const [placeholder, setPlaceholder] = useState('');
 
   useEffect(() => {
     let index = 0;

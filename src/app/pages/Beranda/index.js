@@ -139,11 +139,11 @@ export default function Index() {
   };
 
   const filteredByCategory =
-  selectedCategory === 'all'
-    ? productList.slice(0, visibleCount) // Batasi jumlah produk yang ditampilkan
-    : productList
-        .filter((product) => product.id_kategori === selectedCategory)
-        .slice(0, visibleCount); // Batasi jumlah produk untuk kategori tertentu
+    selectedCategory === 'all'
+      ? productList.slice(0, visibleCount) // Batasi jumlah produk yang ditampilkan
+      : productList
+          .filter((product) => product.id_kategori === selectedCategory)
+          .slice(0, visibleCount); // Batasi jumlah produk untuk kategori tertentu
 
   useEffect(() => {
     fetchFloatingWhatsApp();
@@ -256,11 +256,7 @@ export default function Index() {
           />
           {productList?.length > visibleCount && (
             <div className="text-center mt-10">
-              <button
-                onClick={handleLoadMore}
-                className="btn btn-primary"
-                style={{width: '50%'}}
-              >
+              <button onClick={handleLoadMore} className="btn btn-primary" style={{ width: '50%' }}>
                 Muat Lebih Banyak
               </button>
             </div>
