@@ -133,7 +133,7 @@ const ProductCard = (props) => {
           <Fragment>
             <div className="mt-1">
               <p>
-                Pilih {product?.id_kategori === 1 || product?.id_kategori === 7 ? "Varian " : "Ukuran "}
+                Pilih {product?.id_kategori === 1 || product?.id_kategori === 2 || product?.id_kategori === 7 ? "Varian " : "Ukuran "}
                 <small>({product?.varian?.length} Pilihan)</small>
               </p>
             </div>
