@@ -21,6 +21,7 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Impor CSS untuk animasi
 
 // modals
 import FormWhatsAppModal from '@/app/pages/Beranda/modals/formWhatsApp';
+import TerimaKasihModal from '@/app/pages/Beranda/modals/terimaKasih';
 
 export default function Index() {
   const searchResultsRef = useRef();
@@ -37,6 +38,8 @@ export default function Index() {
   const [products, setProducts] = useState({});
   const [varians, setVarians] = useState({});
   const [quantitys, setQuantitys] = useState({});
+
+  const [showTerimaKasih, setShowTerimaKasih] = useState(false);
 
   const handleScrollDown = () => {
     const html = document.querySelector('html');
@@ -122,11 +125,12 @@ export default function Index() {
     setQuantitys(quantitys);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal = async(value) => {
     setShowFormWhatsApp(false);
     setProducts({});
     setVarians({});
     setQuantitys({});
+    setShowTerimaKasih(true);
   };
 
   const filteredByCategory =
@@ -254,6 +258,10 @@ export default function Index() {
         products={products}
         varians={varians}
         quantitys={quantitys}
+      />
+      <TerimaKasihModal
+        show={showTerimaKasih}
+        onClose={() => setShowTerimaKasih(false)}
       />
 
       <FloatingWhatsApp

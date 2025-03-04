@@ -119,8 +119,7 @@ Mohon konfirmasinya. Terima kasih!
     const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(waLink, '_blank');
 
-    // Reset form setelah sukses
-    resetForm();
+    handleClose();
   };
 
   const resetForm = async () => {
