@@ -131,7 +131,7 @@ const ProductCard = (props) => {
         </a>
         {product?.varian?.length > 0 && (
           <Fragment>
-            <div className="mt-1">
+            <div className="mt-4">
               <p>
                 Pilih{' '}
                 {product?.id_kategori === 1 ||
@@ -163,7 +163,7 @@ const ProductCard = (props) => {
           <Fragment>
             {product?.varian?.find((v) => v.id === varians?.id) && varians?.stok !== 0 && (
               <Fragment>
-                <div className="mt-1">
+                <div className="mt-4">
                   <p>Jumlah</p>
                 </div>
 
@@ -210,7 +210,7 @@ const ProductCard = (props) => {
         ) : (
           product?.varian?.find((v) => v.id === varians?.id) && (
             <Fragment>
-              <div className="mt-1">
+              <div className="mt-4">
                 <p>Jumlah</p>
               </div>
 

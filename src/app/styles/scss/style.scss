@@ -673,8 +673,13 @@ header {
   }
 }
 
-.mt-1 {
-  margin-top: 1rem;
+$spacer: 0.25rem; // 4px (sesuai Bootstrap)
+
+// Generate margin-top classes
+@for $i from 1 through 10 {
+  .mt-#{$i} {
+    margin-top: $spacer * $i;
+  }
 }
 
 .btn-shopee {

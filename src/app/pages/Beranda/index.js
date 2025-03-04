@@ -40,6 +40,7 @@ export default function Index() {
   const [quantitys, setQuantitys] = useState({});
 
   const [showTerimaKasih, setShowTerimaKasih] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const handleScrollDown = () => {
     const html = document.querySelector('html');
@@ -133,10 +134,16 @@ export default function Index() {
     setShowTerimaKasih(true);
   };
 
+  const handleLoadMore = () => {
+    setVisibleCount((prevCount) => prevCount + 12); // Menampilkan tambahan 10 produk
+  };
+
   const filteredByCategory =
-    selectedCategory === 'all'
-      ? productList
-      : productList.filter((product) => product.id_kategori === selectedCategory);
+  selectedCategory === 'all'
+    ? productList.slice(0, visibleCount) // Batasi jumlah produk yang ditampilkan
+    : productList
+        .filter((product) => product.id_kategori === selectedCategory)
+        .slice(0, visibleCount); // Batasi jumlah produk untuk kategori tertentu
 
   useEffect(() => {
     fetchFloatingWhatsApp();
@@ -247,6 +254,17 @@ export default function Index() {
               handleFormWhatsApp(e, products, varians, quantitys)
             }
           />
+          {productList?.length > visibleCount && (
+            <div className="text-center mt-10">
+              <button
+                onClick={handleLoadMore}
+                className="btn btn-primary"
+                style={{width: '50%'}}
+              >
+                Muat Lebih Banyak
+              </button>
+            </div>
+          )}
         </div>
       </section>
       <Footer />
