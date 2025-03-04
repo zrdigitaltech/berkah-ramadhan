@@ -125,7 +125,7 @@ export default function Index() {
     setQuantitys(quantitys);
   };
 
-  const handleCloseModal = async(value) => {
+  const handleCloseModal = async (value) => {
     setShowFormWhatsApp(false);
     setProducts({});
     setVarians({});
@@ -259,10 +259,7 @@ export default function Index() {
         varians={varians}
         quantitys={quantitys}
       />
-      <TerimaKasihModal
-        show={showTerimaKasih}
-        onClose={() => setShowTerimaKasih(false)}
-      />
+      <TerimaKasihModal show={showTerimaKasih} onClose={() => setShowTerimaKasih(false)} />
 
       <FloatingWhatsApp
         avatar={floatingWhatsAppList?.avatar}
