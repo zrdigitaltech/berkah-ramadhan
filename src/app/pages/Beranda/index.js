@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Fragment, useEffect, useState, useRef } from 'react';
+import React, { Fragment, useEffect, useState, useRef, useMemo } from 'react';
 
 import Navbar from '@/app/components/Navbar';
 import SearchBar from '@/app/components/SearchBar';
@@ -139,18 +139,23 @@ export default function Index() {
     setVisibleCount((prevCount) => prevCount + 12); // Menampilkan tambahan 10 produk
   };
 
-  const filteredByCategory =
-    selectedCategory === 'all'
-      ? productList.slice(0, visibleCount) // Batasi jumlah produk yang ditampilkan
-      : productList
-          .filter((product) => product.id_kategori === selectedCategory)
-          .slice(0, visibleCount); // Batasi jumlah produk untuk kategori tertentu
-
-  const shouldShowLoadMoreButton =
-    (selectedCategory === 'all' && productList.length > visibleCount) ||
-    (selectedCategory !== 'all' &&
-      productList.filter((product) => product.id_kategori === selectedCategory).length >
-        visibleCount);
+  const getFilteredProducts = () => {
+    if (selectedCategory === 'all') {
+      return productList.slice(0, visibleCount);
+    }
+    return productList.filter((product) => product.id_kategori === selectedCategory).slice(0, visibleCount);
+  };
+  
+  const filteredByCategory = useMemo(getFilteredProducts, [selectedCategory, productList, visibleCount]);
+  
+  const shouldShowLoadMoreButton = useMemo(() => {
+    const totalProducts =
+      selectedCategory === 'all'
+        ? productList.length
+        : productList.filter((product) => product.id_kategori === selectedCategory).length;
+  
+    return totalProducts > visibleCount;
+  }, [selectedCategory, productList, visibleCount]);
 
   useEffect(() => {
     fetchFloatingWhatsApp();
@@ -158,9 +163,6 @@ export default function Index() {
     fetchKategoris();
     fetchTerlarisProducts();
   }, []);
-
-  console.log('a', filteredByCategory?.length);
-  console.log('b', productList?.length);
 
   return (
     <Fragment>
