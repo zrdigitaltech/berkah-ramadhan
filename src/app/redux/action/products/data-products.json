@@ -5,31 +5,15 @@
     "varian": [
       {
         "id": 1,
-        "jumlah": 250,
+        "jumlah": 750,
         "nama_berat": "gr",
-        "harga": 43000,
+        "harga": 120000,
         "stok": 100,
-        "harga_normal": 60000
-      },
-      {
-        "id": 2,
-        "jumlah": 500,
-        "nama_berat": "gr",
-        "harga": 83000,
-        "stok": 100,
-        "harga_normal": 100000
-      },
-      {
-        "id": 3,
-        "jumlah": 1,
-        "nama_berat": "kg",
-        "harga": 143000,
-        "stok": 100,
-        "harga_normal": 1700000
+        "harga_normal": 135000
       }
     ],
-    "link_wa": null,
-    "link_shopee": "https://s.shopee.co.id/3As7Y4WaNV",
+    "link_wa": 6281228883616,
+    "link_shopee": null,
     "images": "/assets/images/product/delfi-chicchoc.webp",
     "id_kategori": 1
   },
@@ -41,31 +25,31 @@
         "id": 4,
         "jumlah": 500,
         "nama_berat": "gr",
-        "harga": 93000,
+        "harga": 83000,
         "stok": 100,
-        "harga_normal": 120000
+        "harga_normal": 98000
       }
     ],
-    "link_wa": null,
-    "link_shopee": "https://s.shopee.co.id/7pdx72mi5W",
+    "link_wa": 6281228883616,
+    "link_shopee": null,
     "images": "https://down-id.img.susercontent.com/file/id-11134207-7rash-m4soss9q08m08b.webp",
     "id_kategori": 1
   },
   {
     "id": 3,
-    "name": "Delfi Almond",
+    "name": "Delfi Almond/Mede",
     "varian": [
       {
         "id": 5,
         "jumlah": 500,
         "nama_berat": "gr",
-        "harga": 96000,
+        "harga": 92000,
         "stok": 100,
-        "harga_normal": 140000
+        "harga_normal": 107000
       }
     ],
-    "link_wa": null,
-    "link_shopee": "https://s.shopee.co.id/6AVj820EKH",
+    "link_wa": 6281228883616,
+    "link_shopee": null,
     "images": "/assets/images/product/delfi-almond.webp",
     "id_kategori": 1
   },
@@ -77,14 +61,82 @@
         "id": 6,
         "jumlah": 500,
         "nama_berat": "gr",
-        "harga": 96000,
+        "harga": 97000,
         "stok": 100,
-        "harga_normal": 140000
+        "harga_normal": 112000
       }
     ],
-    "link_wa": null,
-    "link_shopee": "https://s.shopee.co.id/1qMjy9jzD0",
+    "link_wa": 6281228883616,
+    "link_shopee": null,
     "images": "/assets/images/product/cha-cha.webp",
+    "id_kategori": 1
+  },
+  {
+    "id": 4,
+    "name": "Treasures Almond Cookies Milk Choco",
+    "varian": [
+      {
+        "id": 6,
+        "jumlah": "Almond 500",
+        "nama_berat": "gr",
+        "harga": 124000,
+        "stok": 100,
+        "harga_normal": 139000
+      },
+      {
+        "id": 6,
+        "jumlah": "Cookies 500",
+        "nama_berat": "gr",
+        "harga": 124000,
+        "stok": 100,
+        "harga_normal": 139000
+      },
+      {
+        "id": 6,
+        "jumlah": "Milk Choco 1",
+        "nama_berat": "kg",
+        "harga": 400000,
+        "stok": 0,
+        "harga_normal": 415000
+      }
+    ],
+    "link_wa": 6281228883616,
+    "link_shopee": null,
+    "images": "/assets/images/product/treasures-almond.webp",
+    "id_kategori": 1
+  },
+  {
+    "id": 4,
+    "name": "Silver Queen Bites Almond/Mede",
+    "varian": [
+      {
+        "id": 66666,
+        "jumlah": "Dark Choco 500",
+        "nama_berat": "gr",
+        "harga": 95000,
+        "stok": 0,
+        "harga_normal": 110000
+      },
+      {
+        "id": 6,
+        "jumlah": "Almond 500",
+        "nama_berat": "gr",
+        "harga": 145000,
+        "stok": 100,
+        "harga_normal": 160000
+      },
+      {
+        "id": 66666,
+        "jumlah": "Mede 500",
+        "nama_berat": "gr",
+        "harga": 145000,
+        "stok": 100,
+        "harga_normal": 160000
+      }
+    ],
+    "link_wa": 6281228883616,
+    "link_shopee": null,
+    "images": "/assets/images/product/sq-bites.webp",
     "id_kategori": 1
   },
   {
@@ -95,17 +147,17 @@
         "id": 7,
         "jumlah": "1/2",
         "nama_berat": "kg",
-        "harga": 60000,
+        "harga": 50000,
         "stok": 100,
-        "harga_normal": 70000
+        "harga_normal": 65000
       },
       {
         "id": 8,
         "jumlah": 1,
         "nama_berat": "kg",
-        "harga": 95000,
+        "harga": 93000,
         "stok": 100,
-        "harga_normal": 110000
+        "harga_normal": 108000
       }
     ],
     "link_wa": 6281228883616,
