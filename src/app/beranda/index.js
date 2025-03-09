@@ -2,17 +2,12 @@
 
 import React, { Fragment, useEffect, useState, useRef, useMemo } from 'react';
 
-import Navbar from '@/app/components/Navbar';
 import SearchBar from '@/app/components/SearchBar';
 import SearchResults from '@/app/components/SearchResults';
 import ProductList from '@/app/components/ProductList';
 import ProductTerlaris from '@/app/components/ProductTerlaris';
-import Footer from '@/app/components/Footer';
-
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getListFloatingWhatsapp } from '@/app/redux/action/floatingWhatsapp/creator';
 import { getListProducts, getTerlarisProducts } from '@/app/redux/action/products/creator';
 import { getListKategoris } from '@/app/redux/action/kategoris/creator';
 
@@ -20,10 +15,15 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'; // Impor CSS untuk animasi
 
 // modals
-import FormWhatsAppModal from '@/app/pages/Beranda/modals/formWhatsApp';
-import TerimaKasihModal from '@/app/pages/Beranda/modals/terimaKasih';
+import FormWhatsAppModal from '@/app/modals/formWhatsApp';
+import TerimaKasihModal from '@/app/modals/terimaKasih';
 
 export default function Index() {
+  const productList = useSelector((state) => state.products.productsList);
+  const productTerlaris = useSelector((state) => state.products.productsTerlaris);
+  const kategoriList = useSelector((state) => state.kategoris.kategorisList);
+  const dispatch = useDispatch();
+
   const searchResultsRef = useRef();
   const [query, setQuery] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -35,7 +35,7 @@ export default function Index() {
   const mainContent = useRef(null);
 
   const [showFormWhatsApp, setShowFormWhatsApp] = useState(false);
-  const [products, setProducts] = useState({});
+  const [products, setProducts] = useState([]);
   const [varians, setVarians] = useState({});
   const [quantitys, setQuantitys] = useState({});
 
@@ -47,16 +47,6 @@ export default function Index() {
     html.classList.add('scroll-smooth');
     mainContent.current?.scrollIntoView();
     html.classList.remove('scroll-smooth');
-  };
-
-  const floatingWhatsAppList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
-  const productList = useSelector((state) => state.products.productsList);
-  const productTerlaris = useSelector((state) => state.products.productsTerlaris);
-  const kategoriList = useSelector((state) => state.kategoris.kategorisList);
-  const dispatch = useDispatch();
-
-  const fetchFloatingWhatsApp = async () => {
-    dispatch(getListFloatingWhatsapp());
   };
 
   const fetchProducts = async () => {
@@ -99,7 +89,7 @@ export default function Index() {
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
       setIsLoading(false);
-    }, 2000);
+    }, 500);
   };
 
   const handleCategoryChange = (category) => {
@@ -121,8 +111,22 @@ export default function Index() {
   };
 
   const handleFormWhatsApp = async (e, products, varians, quantitys) => {
+    e.preventDefault();
     setShowFormWhatsApp(true);
-    setProducts(products);
+
+    const dataArray = [
+      {
+        id: products?.id,
+        id_kategori: products?.id_kategori,
+        name: products?.name,
+        images: products?.images,
+        link_shopee: products?.link_shopee,
+        link_wa: products?.link_wa,
+        quantity: quantitys,
+        variant: varians
+      }
+    ];
+    setProducts(dataArray);
     setVarians(varians);
     setQuantitys(quantitys);
   };
@@ -132,7 +136,6 @@ export default function Index() {
     setProducts({});
     setVarians({});
     setQuantitys({});
-    setShowTerimaKasih(true);
   };
 
   const handleLoadMore = () => {
@@ -143,22 +146,27 @@ export default function Index() {
     if (selectedCategory === 'all') {
       return productList.slice(0, visibleCount);
     }
-    return productList.filter((product) => product.id_kategori === selectedCategory).slice(0, visibleCount);
+    return productList
+      .filter((product) => product.id_kategori === selectedCategory)
+      .slice(0, visibleCount);
   };
-  
-  const filteredByCategory = useMemo(getFilteredProducts, [selectedCategory, productList, visibleCount]);
-  
+
+  const filteredByCategory = useMemo(getFilteredProducts, [
+    selectedCategory,
+    productList,
+    visibleCount
+  ]);
+
   const shouldShowLoadMoreButton = useMemo(() => {
     const totalProducts =
       selectedCategory === 'all'
         ? productList.length
         : productList.filter((product) => product.id_kategori === selectedCategory).length;
-  
+
     return totalProducts > visibleCount;
   }, [selectedCategory, productList, visibleCount]);
 
   useEffect(() => {
-    fetchFloatingWhatsApp();
     fetchProducts();
     fetchKategoris();
     fetchTerlarisProducts();
@@ -166,7 +174,6 @@ export default function Index() {
 
   return (
     <Fragment>
-      <Navbar />
       <section
         className="hero"
         style={{ backgroundImage: `url('/berkah-ramadhan/assets/images/bg-hero.png')` }}
@@ -270,14 +277,18 @@ export default function Index() {
           {/* {productList?.length > visibleCount && ( */}
           {shouldShowLoadMoreButton && (
             <div className="text-center mt-10">
-              <button onClick={handleLoadMore} className="btn btn-primary" style={{ width: '50%' }}>
+              <button
+                disabled={isLoadingProducts}
+                onClick={handleLoadMore}
+                className="btn btn-primary"
+                style={{ width: '50%' }}
+              >
                 Muat Lebih Banyak
               </button>
             </div>
           )}
         </div>
       </section>
-      <Footer />
 
       {/* Modals */}
       <FormWhatsAppModal
@@ -286,29 +297,9 @@ export default function Index() {
         products={products}
         varians={varians}
         quantitys={quantitys}
+        handlePesananViaWhatsApp={() => setShowTerimaKasih(true)}
       />
       <TerimaKasihModal show={showTerimaKasih} onClose={() => setShowTerimaKasih(false)} />
-
-      <FloatingWhatsApp
-        avatar={floatingWhatsAppList?.avatar}
-        phoneNumber={floatingWhatsAppList?.phone_number}
-        accountName={floatingWhatsAppList?.account_name}
-        chatMessage={floatingWhatsAppList?.chat_message}
-        statusMessage={floatingWhatsAppList?.status_message}
-        darkMode={true}
-        placeholder="Ketik pesan..."
-        // allowEsc={true}
-        // allowClickAway
-        // notification
-        // notificationDelay={60000} // 1 minute
-        // notificationSound
-        styles={{
-          position: 'fixed',
-          bottom: '15px',
-          height: '0px !important',
-          fontSize: '14px'
-        }}
-      />
     </Fragment>
   );
 }

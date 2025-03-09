@@ -1,9 +1,13 @@
 import Modals from '@/app/components/Modals';
 import { Fragment, useState } from 'react';
 import './formWhatsApp.scss';
+import { useDispatch } from 'react-redux';
+import { removeSelectedItemsFromCart } from '@/app/redux/action/keranjangs/creator';
 
 const Index = (props) => {
-  const { show, onClose, products, varians, quantitys } = props;
+  const { show, onClose, products, handlePesananViaWhatsApp } = props;
+  const dispatch = useDispatch();
+  console.log('formWhatsApp', products);
 
   const [dataForm, setDataForm] = useState({
     nama: '',
@@ -78,44 +82,65 @@ const Index = (props) => {
       return;
     }
 
-    // Pastikan variabel produk tidak undefined/null
+    // **Menyiapkan data untuk WhatsApp**
     const domain = process.env.NEXT_PUBLIC_DOMAIN || 'Berkah Ramadhan';
-    const phoneNumber = products?.link_wa || '-';
-    const productName = products?.name || '-';
-    const kategori = products?.id_kategori === 7 ? 'Kue' : 'Produk';
-    const teksUkuran =
-      products?.id_kategori === 1 || products?.id_kategori === 2 || products?.id_kategori === 7
-        ? 'Varian'
-        : 'Ukuran';
-    const ukuran = varians?.jumlah
-      ? `${varians.jumlah} ${varians.nama_berat || products?.varian?.[0]?.nama_berat || '-'}`
-      : varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-';
-    const harga = varians?.harga ? `Rp ${varians.harga.toLocaleString('id-ID')}` : 'Rp 0';
-    const total_harga =
-      varians?.harga && quantitys
-        ? `Rp ${(varians.harga * quantitys).toLocaleString('id-ID')}`
-        : '';
+    const phoneNumber = process.env.NEXT_PUBLIC_WA_NUMBER || '628123456789'; // Ubah dengan nomor tujuan default jika tidak tersedia
 
-    // Format pesan
+    let totalHargaPesanan = 0;
+    let totalHargaHemat = 0;
+
+    const productMessages = products
+      .slice()
+      .reverse()
+      .map((product, index) => {
+        const kategori = product?.id_kategori === 7 ? 'Kue' : 'Produk';
+        const teksUkuran =
+          product?.id_kategori === 1 || product?.id_kategori === 2 || product?.id_kategori === 7
+            ? 'Varian'
+            : 'Ukuran';
+
+        const ukuran = product?.variant?.nama_berat || '-';
+        const quantity = product?.quantity || 1;
+        const harga = product?.variant?.harga || 0;
+        const harga_normal = product?.variant?.harga_normal || 0;
+        const totalHargaProduk = harga * quantity;
+        const totalHargaProdukNormal = harga_normal * quantity;
+        const totalHemat = (harga_normal - harga) * quantity;
+
+        // Tambahkan ke total harga keseluruhan
+        totalHargaPesanan += totalHargaProduk;
+        totalHargaHemat += totalHemat;
+
+        return `
+${index + 1}. ${kategori}: ${product.name}
+ ${teksUkuran}: ${ukuran}
+ Jumlah: ${quantity}
+ Harga Normal (Sebelum Diskon): Rp ${harga_normal.toLocaleString('id-ID')}
+ Harga Setelah Diskon: Rp ${harga.toLocaleString('id-ID')}
+ Hemat: Rp ${totalHemat.toLocaleString('id-ID')}
+ SubTotal: Rp ${totalHargaProduk.toLocaleString('id-ID')}
+  `.trim();
+      });
+
+    // **Format pesan WhatsApp**
     const message = `
-Halo ${domain}, saya tertarik untuk membeli ${kategori} berikut:
+Halo ${domain}, saya tertarik untuk membeli produk berikut:
 
-Nama ${kategori}: ${productName}
-${teksUkuran}: ${ukuran}
-Jumlah: ${quantitys}
-Harga: ${harga}
-${quantitys >= 2 ? `Total Harga: ${total_harga}` : ''}
+${productMessages.join('\n\n')}
+
+Total: Rp ${totalHargaPesanan.toLocaleString('id-ID')}
+Hemat: Rp ${totalHargaHemat.toLocaleString('id-ID')}
 
 Informasi Pemesanan:
-Nama Lengkap: ${nama}
+Nama: ${nama}
 No HP: ${no_hp}
-Metode Pengiriman : ${metode_pengiriman}
+Metode Pengiriman: ${metode_pengiriman}
 Alamat: ${metode_pengiriman === 'Dikirim' ? alamat : '-'}
 Metode Pembayaran: ${metode_pembayaran}
 Catatan: ${catatan || '-'}
 
 Mohon konfirmasinya. Terima kasih!
-  `.trim();
+`.trim();
 
     // Encode message dan buka WhatsApp
     const encodedMessage = encodeURIComponent(message);
@@ -123,6 +148,12 @@ Mohon konfirmasinya. Terima kasih!
     window.open(waLink, '_blank');
 
     handleClose();
+    // Ambil hanya ID yang akan dihapus
+    const selectedIds = products?.map((item) => item?.id);
+
+    // Dispatch penghapusan berdasarkan ID
+    dispatch(removeSelectedItemsFromCart(selectedIds));
+    handlePesananViaWhatsApp();
   };
 
   const resetForm = async () => {
@@ -139,6 +170,17 @@ Mohon konfirmasinya. Terima kasih!
     onClose();
   };
 
+  // Hitung total harga dan total hemat
+  const totalHarga = Array.isArray(products)
+    ? products?.reduce((sum, item) => sum + (item.variant?.harga || 0) * item.quantity, 0)
+    : 0;
+
+  const totalHargaNormal = Array.isArray(products)
+    ? products?.reduce((sum, item) => sum + (item.variant?.harga_normal || 0) * item.quantity, 0)
+    : 0;
+
+  const totalHemat = totalHargaNormal - totalHarga;
+
   return (
     <Modals
       title="Form Pemesanan"
@@ -147,46 +189,60 @@ Mohon konfirmasinya. Terima kasih!
       modalBody={
         <Fragment>
           <form>
-            <div className="mb-3">
-              <h4>Produk detail :</h4>
-            </div>
-            <div className="table-container">
-              <table className="custom-table">
-                <thead>
-                  <tr>
-                    <th className="text-left">
-                      Nama {products?.id_kategori === 7 ? 'Kue' : 'Produk'}
-                    </th>
-                    <th className="text-center">Ukuran</th>
-                    <th className="text-center">Jumlah</th>
-                    <th className="text-center">Harga</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="text-left" title={`${products?.name || '-'}`}>
-                      <p className="product-info">{products?.name || '-'}</p>
-                    </td>
-                    <td className="text-center">
-                      {varians?.jumlah}{' '}
-                      {varians?.nama_berat || products?.varian?.[0]?.nama_berat || '-'}
-                    </td>
-                    <td className="text-center">{quantitys}</td>
-                    <td className="text-right">{varians?.harga?.toLocaleString('id-ID') || '0'}</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div className="total-harga">
-                <b>Total Harga:</b> Rp{' '}
-                <span>
-                  {varians?.harga
-                    ? (varians.harga * quantitys)?.toLocaleString('id-ID')
-                    : products?.varian?.[0]?.harga?.toLocaleString('id-ID') || '0'}
-                </span>
-              </div>
-            </div>
-            <hr className="mb-4" />
+            {Array.isArray(products) &&
+              products
+                ?.slice()
+                ?.reverse()
+                ?.map((item, idx) => (
+                  <div className="card-item mb-2" key={idx || item.id}>
+                    <img src={item.images} alt={item.name} className="item-image" />
+                    <div className="w-100 h-100 text-truncate">
+                      <div className="item-info text-truncate">
+                        <div className="text-truncate">
+                          <h4 className="item-name text-truncate" title={item.name}>
+                            {item.name}
+                          </h4>
+                        </div>
+                        <div>
+                          <p className="item-price mb-0">
+                            {item.quantity} x Rp{' '}
+                            {item.variant?.harga ? item.variant.harga.toLocaleString('id-ID') : '0'}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="d-flex justify-content-between ml-4">
+                        <div style={{ color: '#a0a0a0' }}>{item.variant?.nama_berat}</div>
+                        <div>
+                          <small className="item-price-normal">
+                            Rp{' '}
+                            {item.variant?.harga_normal
+                              ? item.variant.harga_normal.toLocaleString('id-ID')
+                              : '0'}
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            {products && (
+              <Fragment>
+                <div className="p-2 pr-4">
+                  <p className="d-flex justify-content-between">
+                    <b>Total</b>
+                    <strong className="text-primary">
+                      Rp {totalHarga.toLocaleString('id-ID')}
+                    </strong>
+                  </p>
+                  <p className="d-flex justify-content-between">
+                    <b>Hemat</b>
+                    <strong className="harga-normal">
+                      Rp {totalHemat.toLocaleString('id-ID')}
+                    </strong>
+                  </p>
+                </div>
+                <hr className="mb-4" />
+              </Fragment>
+            )}
             <div className="mb-3">
               <h4>Informasi Pemesanan :</h4>
             </div>

@@ -43,7 +43,7 @@ export const getTerlarisProducts = () => {
     const shuffledProducts = [...DataProducts].sort(() => Math.random() - 0.5);
 
     // Limit the result to 10 products
-    const limitedProducts = shuffledProducts.slice(0, 10);
+    const limitedProducts = shuffledProducts?.slice(0, 10);
 
     // Dispatch the action with the limited products
     return dispatch(saveTerlarisProducts(limitedProducts));
