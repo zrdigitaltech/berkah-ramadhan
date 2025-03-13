@@ -1,0 +1,31 @@
+/* Buttons */
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  color: var(--white);
+  border-radius: 3px;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+}

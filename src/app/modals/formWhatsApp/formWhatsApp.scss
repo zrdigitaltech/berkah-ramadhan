@@ -87,3 +87,55 @@ select {
     padding: 0 10px 10px 10px;
   }
 }
+
+.card-item {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0.25rem;
+
+  .item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+
+    .item-name {
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .item-price {
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .item-price-normal {
+    text-decoration: line-through;
+    color: rgb(160, 160, 160);
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #d64545;
+    }
+  }
+}

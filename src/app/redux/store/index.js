@@ -4,6 +4,11 @@ import rootReducer from '@/app/redux/reducer';
 
 export const makeStore = () => {
   return configureStore({
-    reducer: rootReducer
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        immutableCheck: false, // Matikan ImmutableStateInvariantMiddleware
+        serializableCheck: false // Opsional: Matikan pengecekan serializable
+      })
   });
 };

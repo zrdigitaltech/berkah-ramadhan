@@ -2,7 +2,7 @@ import { Fragment, useEffect } from 'react';
 import './modals.scss'; // Import SCSS
 
 const Index = (props) => {
-  const { show, onClose, modalBody, modalFooter, title } = props;
+  const { show, onClose, modalBody, modalFooter, title, onCloseBackDrop } = props;
 
   useEffect(() => {
     if (show) {
@@ -19,12 +19,14 @@ const Index = (props) => {
       <div className={'modal fade show'} id={'myModal'} tabIndex="-1" role="dialog">
         <div className="modal-dialog" role="document">
           <div className="modal-content mt13">
-            <div className="modal-header center">
-              <h5 className="modal-title">{title}</h5>
-              <button onClick={onClose} className="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+            {title && (
+              <div className="modal-header center">
+                <h5 className="modal-title">{title}</h5>
+                <button onClick={onClose} className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            )}
             <div className="modal-body">{modalBody}</div>
             <center>
               <div className="modal-footer center">{modalFooter}</div>
@@ -32,7 +34,7 @@ const Index = (props) => {
           </div>
         </div>
       </div>
-      <div className="modal-backdrop fade show"></div>
+      <div className="modal-backdrop fade show" onClick={onCloseBackDrop}></div>
     </Fragment>
   );
 };

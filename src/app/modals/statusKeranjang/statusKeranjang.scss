@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px; // Jarak antar elemen
+
+  &-image {
+    background-color: #f0f0f0; // Placeholder warna
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 60px; // Ukuran gambar
+      height: 60px;
+      border-radius: 8px;
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-name {
+    font-weight: bold;
+  }
+
+  &-size {
+    font-size: 14px;
+    color: gray;
+  }
+}
