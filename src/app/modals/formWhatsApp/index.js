@@ -7,7 +7,7 @@ import { removeSelectedItemsFromCart } from '@/app/redux/action/keranjangs/creat
 const Index = (props) => {
   const { show, onClose, products, handlePesananViaWhatsApp } = props;
   const dispatch = useDispatch();
-  console.log('formWhatsApp', products);
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variables
 
   const [dataForm, setDataForm] = useState({
     nama: '',
@@ -84,34 +84,31 @@ const Index = (props) => {
 
     // **Menyiapkan data untuk WhatsApp**
     const domain = process.env.NEXT_PUBLIC_DOMAIN || 'Berkah Ramadhan';
-    const phoneNumber = process.env.NEXT_PUBLIC_WA_NUMBER || '628123456789'; // Ubah dengan nomor tujuan default jika tidak tersedia
+    const phoneNumber = products?.[0]?.link_wa || '6281228883616'; // Ubah dengan nomor tujuan default jika tidak tersedia
 
     let totalHargaPesanan = 0;
     let totalHargaHemat = 0;
 
-    const productMessages = products
-      .slice()
-      .reverse()
-      .map((product, index) => {
-        const kategori = product?.id_kategori === 7 ? 'Kue' : 'Produk';
-        const teksUkuran =
-          product?.id_kategori === 1 || product?.id_kategori === 2 || product?.id_kategori === 7
-            ? 'Varian'
-            : 'Ukuran';
+    const productMessages = products.map((product, index) => {
+      const kategori = product?.id_kategori === 7 ? 'Kue' : 'Produk';
+      const teksUkuran =
+        product?.id_kategori === 1 || product?.id_kategori === 2 || product?.id_kategori === 7
+          ? 'Varian'
+          : 'Ukuran';
 
-        const ukuran = product?.variant?.nama_berat || '-';
-        const quantity = product?.quantity || 1;
-        const harga = product?.variant?.harga || 0;
-        const harga_normal = product?.variant?.harga_normal || 0;
-        const totalHargaProduk = harga * quantity;
-        const totalHargaProdukNormal = harga_normal * quantity;
-        const totalHemat = (harga_normal - harga) * quantity;
+      const ukuran = product?.variant?.jumlah + product?.variant?.nama_berat || '-';
+      const quantity = product?.quantity || 1;
+      const harga = product?.variant?.harga || 0;
+      const harga_normal = product?.variant?.harga_normal || 0;
+      const totalHargaProduk = harga * quantity;
+      const totalHargaProdukNormal = harga_normal * quantity;
+      const totalHemat = (harga_normal - harga) * quantity;
 
-        // Tambahkan ke total harga keseluruhan
-        totalHargaPesanan += totalHargaProduk;
-        totalHargaHemat += totalHemat;
+      // Tambahkan ke total harga keseluruhan
+      totalHargaPesanan += totalHargaProduk;
+      totalHargaHemat += totalHemat;
 
-        return `
+      return `
 ${index + 1}. ${kategori}: ${product.name}
  ${teksUkuran}: ${ukuran}
  Jumlah: ${quantity}
@@ -120,7 +117,7 @@ ${index + 1}. ${kategori}: ${product.name}
  Hemat: Rp ${totalHemat.toLocaleString('id-ID')}
  SubTotal: Rp ${totalHargaProduk.toLocaleString('id-ID')}
   `.trim();
-      });
+    });
 
     // **Format pesan WhatsApp**
     const message = `
@@ -190,40 +187,47 @@ Mohon konfirmasinya. Terima kasih!
         <Fragment>
           <form>
             {Array.isArray(products) &&
-              products
-                ?.slice()
-                ?.reverse()
-                ?.map((item, idx) => (
-                  <div className="card-item mb-2" key={idx || item.id}>
-                    <img src={item.images} alt={item.name} className="item-image" />
-                    <div className="w-100 h-100 text-truncate">
-                      <div className="item-info text-truncate">
-                        <div className="text-truncate">
-                          <h4 className="item-name text-truncate" title={item.name}>
-                            {item.name}
-                          </h4>
-                        </div>
-                        <div>
-                          <p className="item-price mb-0">
-                            {item.quantity} x Rp{' '}
-                            {item.variant?.harga ? item.variant.harga.toLocaleString('id-ID') : '0'}
-                          </p>
-                        </div>
+              products?.map((item, idx) => (
+                <div className="card-item mb-2" key={idx || item.id}>
+                  <img
+                    src={
+                      item?.images?.startsWith('/assets/images/')
+                        ? domain + item.images
+                        : item?.images || 'https://placehold.co/1024x1024'
+                    }
+                    alt={item.name}
+                    className="item-image"
+                  />
+                  <div className="w-100 h-100 text-truncate">
+                    <div className="item-info text-truncate">
+                      <div className="text-truncate">
+                        <h4 className="item-name text-truncate" title={item.name}>
+                          {item.name}
+                        </h4>
                       </div>
-                      <div className="d-flex justify-content-between ml-4">
-                        <div style={{ color: '#a0a0a0' }}>{item.variant?.nama_berat}</div>
-                        <div>
-                          <small className="item-price-normal">
-                            Rp{' '}
-                            {item.variant?.harga_normal
-                              ? item.variant.harga_normal.toLocaleString('id-ID')
-                              : '0'}
-                          </small>
-                        </div>
+                      <div>
+                        <p className="item-price mb-0">
+                          {item.quantity} x Rp{' '}
+                          {item.variant?.harga ? item.variant.harga.toLocaleString('id-ID') : '0'}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex justify-content-between ml-4">
+                      <div style={{ color: '#a0a0a0' }}>
+                        {item.variant?.jumlah} {item.variant?.nama_berat}
+                      </div>
+                      <div>
+                        <small className="item-price-normal">
+                          Rp{' '}
+                          {item.variant?.harga_normal
+                            ? item.variant.harga_normal.toLocaleString('id-ID')
+                            : '0'}
+                        </small>
                       </div>
                     </div>
                   </div>
-                ))}
+                </div>
+              ))}
             {products && (
               <Fragment>
                 <div className="p-2 pr-4">

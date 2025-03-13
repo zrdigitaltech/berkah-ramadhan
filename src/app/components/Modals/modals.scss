@@ -1,16 +1,74 @@
+/* Modal Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Animasi Fade In dengan Translate */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeOutTop {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+
 /* Modal */
-.modal {
-  display: block; /* Pastikan modal terlihat */
+.modal-center, .modal-top {
+  display: block;
   position: fixed;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   z-index: 1050;
   width: 90%;
   max-width: 500px;
-  max-height: 90vh; /* Batasi tinggi modal */
+  max-height: 90vh;
   display: flex;
-  flex-direction: column; /* Tata letak vertikal */
+  flex-direction: column;
+}
+
+/* Modal Center */
+.modal-center {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modal Top */
+.modal-top {
+  top: 10%;
+  animation: fadeInTop 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Modal Content */
@@ -100,6 +158,25 @@
   }
 }
 
+/* Backdrop Animation */
+@keyframes backdropFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backdropFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Modal Backdrop */
 .modal-backdrop {
   position: fixed;
@@ -111,6 +188,7 @@
   z-index: 1040;
   opacity: 1 !important;
   transition: opacity 0.3s ease-in-out;
+  animation: backdropFadeIn 0.3s ease-out;
 }
 
 /* Efek fade-in untuk backdrop */
@@ -120,5 +198,6 @@
 
 /* Efek fade-out ketika modal ditutup */
 .modal-backdrop.fade {
+  animation: backdropFadeOut 0.3s ease-in-out;
   opacity: 0;
 }

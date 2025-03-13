@@ -547,27 +547,27 @@ ul {
 $spacer: 0.25rem; // 4px (sesuai Bootstrap)
 
 // Generate margin-top classes
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
   .mt-#{$i} {
-    margin-top: $spacer * $i;
+    margin-top: $spacer * $i !important;
   }
   .ml-#{$i} {
-    margin-left: $spacer * $i;
+    margin-left: $spacer * $i !important;
   }
   .p-#{$i} {
-    padding: $spacer * $i;
+    padding: $spacer * $i !important;
   }
   .pl-#{$i} {
-    padding-left: $spacer * $i;
+    padding-left: $spacer * $i !important;
   }
   .pr-#{$i} {
-    padding-right: $spacer * $i;
+    padding-right: $spacer * $i !important;
   }
   .pb-#{$i} {
-    padding-bottom: $spacer * $i;
+    padding-bottom: $spacer * $i !important;
   }
   .pt-#{$i} {
-    padding-top: $spacer * $i;
+    padding-top: $spacer * $i !important;
   }
 }
 
@@ -576,9 +576,25 @@ $spacer: 0.25rem; // 4px (sesuai Bootstrap)
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
   background-color: #ee4d2d;
+  border: 1px solid #ee4d2d;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: #f05d40;
+  }
+}
+
+.btn-outline-primary {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 
@@ -720,6 +736,9 @@ $spacing-values: (
   3: 1rem,
   4: 1.5rem,
   5: 3rem,
+  25: 25%,
+  50: 50%,
+  75: 75%,
   100: 100% // Digabung ke dalam variabel utama
 );
 
@@ -744,17 +763,13 @@ $spacing-values: (
   }
 }
 
-// Generate width classes, khusus menangani 100%
+// Generate width & height classes
 @each $key, $value in $spacing-values {
-  @if $value == 100% {
-    .w-#{$key} {
-      width: 100% !important;
-    }
+  .w-#{$key} {
+    width: $value !important;
   }
-  @if $value == 100% {
-    .h-#{$key} {
-      height: $value !important;
-    }
+  .h-#{$key} {
+    height: $value !important;
   }
 }
 

@@ -5,6 +5,7 @@ import './statusKeranjang.scss';
 
 const Index = (props) => {
   const { show, onClose, product } = props;
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variables
 
   useEffect(() => {
     if (show) {
@@ -31,11 +32,22 @@ const Index = (props) => {
         <Fragment>
           <div className="d-flex align-items-center gap-3 card">
             <div className="card-image">
-              <img src={product?.images} alt={product?.name} />
+              <img
+                src={
+                  product?.images?.startsWith('/assets/images/')
+                    ? domain + product.images
+                    : product?.images || 'https://placehold.co/1024x1024'
+                }
+                alt={product?.name}
+              />
             </div>
-            <div className="card-details">
-              <span className="card-name">{product?.name}</span>
-              <span className="card-size">{product?.variant?.nama_berat}</span>
+            <div className="card-details text-truncate">
+              <span className="card-name text-truncate" title={product?.name}>
+                {product?.name}
+              </span>
+              <span className="card-size">
+                {product?.variant?.jumlah} {product?.variant?.nama_berat}
+              </span>
             </div>
           </div>
         </Fragment>

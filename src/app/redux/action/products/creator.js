@@ -4,24 +4,42 @@ import { actionType } from '@/app/redux/action/products/type';
 import DataProducts from './data-products.json';
 
 // Function to generate a unique ID
-function generateUniqueId() {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
-}
+import { generateUniqueId } from '@/app/helper/utils';
 
-// Read
+// Function to retrieve products from localStorage or generate new ones
+const getStoredProducts = () => {
+  const storedProducts = localStorage.getItem('products');
+  return storedProducts ? JSON.parse(storedProducts) : null;
+};
+
+// Function to save products to localStorage
+const saveProductsToLocalStorage = (products) => {
+  localStorage.setItem('products', JSON.stringify(products));
+};
+
 export const getListProducts = () => {
-  const productsWithIds = DataProducts.map((product, productIndex) => {
-    // Add ID to the product
-    product.id = generateUniqueId();
+  let productsWithIds = getStoredProducts();
 
-    // Add IDs to variants
-    product.varian = product.varian.map((variant, variantIndex) => ({
-      ...variant,
-      id: generateUniqueId()
-    }));
+  // If there are no stored products, generate new ones
+  if (!productsWithIds) {
+    productsWithIds = DataProducts.map((product, idx) => {
+      // Check if the product already has an ID
+      
+      product.id = idx+1; // Add ID to the product
 
-    return product;
-  });
+      // Add IDs to variants if not already present
+      product.varian = product.varian.map((variant, idxs) => ({
+        ...variant,
+        id: idxs+1
+      }));
+
+      return product;
+    });
+
+    // Save the products with IDs to localStorage
+    saveProductsToLocalStorage(productsWithIds);
+  }
+
   // Sort products: first available stock, then out of stock
   const sortedProducts = productsWithIds?.sort((a, b) => {
     const aInStock = a.varian?.some((v) => v.stok > 0); // Check if any variant has stock

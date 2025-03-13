@@ -79,6 +79,14 @@ export const removeFromCart = (productId, variantId) => {
   };
 };
 
+// Action untuk mengembalikan item ke cart
+export const restoreToCart = (product) => {
+  return (dispatch, getState) => {
+    let cart = [...getState().keranjangs.keranjangsList, product];
+    dispatch(saveListKeranjangs(cart));
+  };
+};
+
 // Update jumlah item did keranjang
 export const updateCartQuantity = (productId, variantId, newQuantity) => {
   return (dispatch, getState) => {

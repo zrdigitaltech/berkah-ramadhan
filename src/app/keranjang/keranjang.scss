@@ -41,52 +41,70 @@
   }
 
   .keranjang-item {
-    display: flex;
-    align-items: center;
-    background: #fff;
+    box-shadow: 0 2px 5px #0000001a;
+    background-color: #fff;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    // &-header {
 
-    .item-image {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+    // }
 
-    .item-info {
-      flex: 1;
+    .keranjang-item-body {
       display: flex;
-      justify-content: space-between;
-      margin-left: 1rem;
-
-      .item-name {
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      align-items: center;
+      background: #fff;
+      // padding: 1rem;
+      // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      // border-radius: 8px;
+      padding: 0;
+      box-shadow: 'none';
+      border-bottom: 1px solid #eee;
+      border-radius: 0;
+      padding-bottom: 1.5rem;
+      &:last-child {
+        border-bottom: none;
       }
 
-      .item-price {
-        color: var(--primary-color);
-        font-weight: bold;
-        margin-bottom: 0.5rem;
+      .item-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
       }
-    }
-    .item-price-normal {
-      text-decoration: line-through;
-      color: rgb(160, 160, 160);
-    }
 
-    svg {
-      width: 26px;
-      height: 26px;
-      color: #ff6b6b;
-      cursor: pointer;
-      transition: color 0.3s ease;
-      &:hover {
-        color: #d64545;
+      .item-info {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+
+        .item-name {
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .item-price {
+          color: var(--primary-color);
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .item-price-normal {
+        text-decoration: line-through;
+        color: rgb(160, 160, 160);
+      }
+
+      svg {
+        width: 26px;
+        height: 26px;
+        color: #ff6b6b;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #d64545;
+        }
       }
     }
   }
@@ -134,6 +152,7 @@
   @media (max-width: 768px) {
     .keranjang-wrapper {
       flex-direction: column;
+      padding-bottom: 170px;
     }
 
     .cart-summary {

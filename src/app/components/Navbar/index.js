@@ -13,7 +13,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const Index = () => {
-  const domain = process.env.NEXT_PUBLIC_DOMAIN;
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variables
   const pathname = usePathname();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const cartRef = useRef(null); // Untuk mendeteksi klik di luar dropdown
@@ -80,7 +80,7 @@ const Index = () => {
               >
                 <Link
                   className={`nav-link ${pathname === '/keranjang' ? 'selected' : ''}`}
-                  href="/keranjang"
+                  href="#"
                 >
                   <span className="cart-icon">🛒</span>
                 </Link>
@@ -103,13 +103,21 @@ const Index = () => {
                     ) : displayedItems?.length > 0 ? (
                       displayedItems?.map((item, idx) => (
                         <div className="cart-item" key={idx || item?.id}>
-                          <img src={item.images} alt={item?.name} className="cart-item-image" />
+                          <img
+                            src={
+                              item?.images?.startsWith('/assets/images/')
+                                ? domain + item.images
+                                : item?.images || 'https://placehold.co/1024x1024'
+                            }
+                            alt={item?.name}
+                            className="cart-item-image"
+                          />
                           <div className="cart-item-info text-truncate">
                             <p className="cart-item-name text-truncate" title={item?.name}>
                               {item?.name}
                             </p>
                             <h4 className="cart-item-price" style={{ color: '#a0a0a0' }}>
-                              {item?.variant?.nama_berat}
+                              {item?.variant?.jumlah} {item?.variant?.nama_berat}
                             </h4>
                             <h4 className="cart-item-price">
                               {item?.quantity} x <small>Rp</small>
@@ -141,7 +149,7 @@ const Index = () => {
                   ) : (
                     <div className="cart-footer">
                       <p className="remaining-items">
-                        {remainingItemsCount > 0 ? `${remainingItemsCount} Produk Lainnya` : ''}
+                        {remainingItemsCount > 0 ? `+${remainingItemsCount} Produk Lainnya` : ''}
                       </p>
 
                       {keranjangsList?.length > 0 && (
