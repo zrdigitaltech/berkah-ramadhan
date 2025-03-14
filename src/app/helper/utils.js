@@ -1,12 +1,14 @@
-// Format nomor telepon dari 62xxxxxxxxxx menjadi 08xxxxxxxxxx
+// Format nomor telepon dari 6281228883616 menjadi 628122888xxxx
 export const formatPhoneNumber = (phone) => {
-  // Pastikan phone selalu berupa string
-  const phoneStr = String(phone);
+  if (!phone) return '';
 
-  if (phoneStr.startsWith('62')) {
-    return '0' + phoneStr.slice(2);
-  }
-  return phoneStr; // Jika sudah dalam format yang benar, biarkan saja
+  // Konversi ke string jika input berupa angka
+  const phoneStr = phone.toString();
+
+  // Pastikan panjang nomor minimal 12 digit sebelum diproses
+  if (phoneStr.length < 12) return phoneStr;
+
+  return phoneStr.replace(/(\d{8})\d{4}$/, '$1xxxx');
 };
 
 // Format angka ke format mata uang Rupiah (IDR) dengan pemisah ribuan
