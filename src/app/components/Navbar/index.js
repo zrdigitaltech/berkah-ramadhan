@@ -26,14 +26,9 @@ const Index = () => {
   const remainingItemsCount = Math.max(0, keranjangsList?.length - displayedItems?.length);
 
   const fetchKeranjangs = async () => {
-    // setIsLoading(true);
-    // await dispatch(getListKeranjangs());
-    // setIsLoading(false);
     setIsLoading(true);
-    setTimeout(() => {
-      dispatch(getListKeranjangs());
-      setIsLoading(false);
-    }, 500);
+    await dispatch(getListKeranjangs());
+    setIsLoading(false);
   };
 
   // Menutup dropdown saat klik di luar area cart
