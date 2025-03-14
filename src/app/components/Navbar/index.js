@@ -97,6 +97,7 @@ const Index = () => {
                 <Link
                   className={`nav-link ${pathname === '/keranjang' ? 'selected' : ''}`}
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                 >
                   <span className="cart-icon">🛒</span>
                 </Link>

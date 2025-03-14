@@ -611,7 +611,7 @@ $spacer: 0.25rem; // 4px (sesuai Bootstrap)
   position: sticky; /* Make the container sticky */
   top: 0; /* Define the vertical position where it becomes sticky */
   background-color: #fafafa; /* Set a background to avoid transparency issues */
-  z-index: 10; /* Ensure it appears above other elements */
+  z-index: 1; /* Ensure it appears above other elements 10 */
   padding: 10px 0; /* Add padding for better appearance */
 
   .categories-scrollable {
