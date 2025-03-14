@@ -5,6 +5,19 @@ header {
   display: flex;
   align-items: center;
 }
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.relative-header {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-10px); /* Beri efek smooth */
+}
 
 .navbar {
   display: flex;

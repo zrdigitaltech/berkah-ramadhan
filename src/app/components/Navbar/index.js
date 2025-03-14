@@ -25,14 +25,35 @@ const Index = () => {
   const displayedItems = keranjangsList?.slice(0, 4);
   const remainingItemsCount = Math.max(0, keranjangsList?.length - displayedItems?.length);
 
+  const [isSticky, setIsSticky] = useState(true);
+  const observerRef = useRef(null); // Menyimpan observer agar bisa dihapus nanti
+
   const fetchKeranjangs = async () => {
     setIsLoading(true);
     await dispatch(getListKeranjangs());
     setIsLoading(false);
   };
 
+  const handleSticky = () => {
+    const tabsContainer = document.querySelector('.batasHeader'); // Ambil elemen dengan class tabs-container
+
+    if (!tabsContainer) return; // Cegah error jika elemen belum tersedia
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSticky(!entry.isIntersecting); // Jika tabs-container terlihat, header berhenti sticky
+      },
+      { rootMargin: '0px 0px -1000px 0px' } // Sesuaikan margin agar deteksi lebih halus
+    );
+
+    observer.observe(tabsContainer); // Amati elemen tabs-container
+
+    return () => observer.disconnect(); // Hapus observer saat komponen unmount
+  };
+
   // Menutup dropdown saat klik di luar area cart
   useEffect(() => {
+    handleSticky();
     fetchKeranjangs();
     const handleClickOutside = (event) => {
       if (cartRef.current && !cartRef.current.contains(event.target)) {
@@ -45,7 +66,7 @@ const Index = () => {
   }, []);
 
   return (
-    <header>
+    <header className={isSticky ? 'sticky-header' : 'relative-header'}>
       <div className="container">
         <nav className="navbar">
           <Link href="/" className="brand">

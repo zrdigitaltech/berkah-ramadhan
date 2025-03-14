@@ -229,7 +229,7 @@ export default function Index() {
         <div className="container">
           <h2 className="heading-2">Kamu Mungkin Suka</h2>
           {/* Tab Navigation */}
-          <div className="tabs-container">
+          <div className="tabs-container batasHeader">
             {/* Button "ALL" outside the scrollable container */}
             {isLoadingCategories ? null : (
               <button

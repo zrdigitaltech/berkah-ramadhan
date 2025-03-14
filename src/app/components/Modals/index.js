@@ -14,7 +14,7 @@ const Index = (props) => {
     modalBackdrop,
     scrolls,
     styleModalContent,
-    position = "center", 
+    position = 'center'
   } = props;
 
   useEffect(() => {
@@ -29,11 +29,17 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <div id={'myModal'} tabIndex="-1" role="dialog"
-      className={`modal fade show ${position === "top" ? "modal-top" : "modal-center"}`}>
+      <div
+        id={'myModal'}
+        tabIndex="-1"
+        role="dialog"
+        className={`modal fade show ${position === 'top' ? 'modal-top' : 'modal-center'}`}
+      >
         <div className="modal-dialog" role="document">
-          <div className={`modal-content mt13 ${classModalContent || ''}`}
-          style={styleModalContent}>
+          <div
+            className={`modal-content mt13 ${classModalContent || ''}`}
+            style={styleModalContent}
+          >
             {title && (
               <div className="modal-header center">
                 <h5 className="modal-title">{title}</h5>
@@ -42,9 +48,7 @@ const Index = (props) => {
                 </button>
               </div>
             )}
-            <div className={`modal-body ${classModalBody || ''}`}
-            
-            >{modalBody}</div>
+            <div className={`modal-body ${classModalBody || ''}`}>{modalBody}</div>
             {modalFooter && (
               <center>
                 <div className="modal-footer center">{modalFooter}</div>
@@ -53,8 +57,11 @@ const Index = (props) => {
           </div>
         </div>
       </div>
-      {modalBackdrop === false ? modalBackdrop :
-      <div className="modal-backdrop fade show" onClick={onCloseBackDrop}></div> }
+      {modalBackdrop === false ? (
+        modalBackdrop
+      ) : (
+        <div className="modal-backdrop fade show" onClick={onCloseBackDrop}></div>
+      )}
     </Fragment>
   );
 };

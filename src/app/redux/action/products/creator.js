@@ -24,13 +24,13 @@ export const getListProducts = () => {
   if (!productsWithIds) {
     productsWithIds = DataProducts.map((product, idx) => {
       // Check if the product already has an ID
-      
-      product.id = idx+1; // Add ID to the product
+
+      product.id = idx + 1; // Add ID to the product
 
       // Add IDs to variants if not already present
       product.varian = product.varian.map((variant, idxs) => ({
         ...variant,
-        id: idxs+1
+        id: idxs + 1
       }));
 
       return product;
