@@ -41,7 +41,13 @@ export default function TokoPage({ params }) {
 
   return (
     <div className="text-center">
-      Cooming Soon
+      <h1 className="text-2xl font-bold">Produk dengan WhatsApp: {id}</h1>
+      {products.map((product) => (
+        <div key={product.id} className="border p-4 my-2">
+          <h2 className="text-lg font-semibold">{product.name}</h2>
+          <p>Harga: Rp {product.varian[0].harga.toLocaleString("id-ID")}</p>
+        </div>
+      ))}
     </div>
   );
 }
