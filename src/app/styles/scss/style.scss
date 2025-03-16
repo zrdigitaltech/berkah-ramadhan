@@ -569,6 +569,14 @@ $spacer: 0.25rem; // 4px (sesuai Bootstrap)
   .pt-#{$i} {
     padding-top: $spacer * $i !important;
   }
+  .px-#{$i} {
+    padding-left: $spacer * $i !important;
+    padding-right: $spacer * $i !important;
+  }
+  .py-#{$i} {
+    padding-top: $spacer * $i !important;
+    padding-bottom: $spacer * $i !important;
+  }
 }
 
 .btn-shopee {
@@ -772,6 +780,9 @@ $spacing-values: (
     height: $value !important;
   }
 }
+.w-auto {
+  width: auto !important;
+}
 
 @each $pos in left, center, right {
   .text-#{$pos} {
@@ -804,6 +815,9 @@ $spacing-values: (
 }
 .justify-content-end {
   justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
 }
 
 .align-items-center {

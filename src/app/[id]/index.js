@@ -5,6 +5,8 @@ import './id.scss';
 
 import ProductList from '@/app/components/ProductList';
 
+import Loading from '@/app/components/Loading';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { getListProducts } from '@/app/redux/action/products/creator';
 
@@ -102,6 +104,17 @@ export default function TokoPage({ params }) {
 
   // Debugging log
   useEffect(() => {}, [productList, productId]);
+
+  // Tampilkan "Loading..." jika data belum tersedia
+  if (!productList.length)
+    return (
+      <div className="d-flex justify-content-center">
+        <Loading />
+      </div>
+    );
+
+  // Jika produk tidak ditemukan, tampilkan pesan
+  if (!products.length) return <p className="text-center text-red-500">Produk tidak ditemukan</p>;
 
   return (
     <Fragment>
