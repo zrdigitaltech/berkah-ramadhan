@@ -230,8 +230,8 @@ export default function Index() {
       {/* Kontent - Cemilan untukmu hari ini */}
 
       <section className="recipes recipes-today" ref={mainContent}>
+      <div style={{ height: '60px' }}></div>
         <div className="container mb-3">
-          {/* Tab Navigation */}
           <div className="align-items-center tabs-container">
             <h2 className="heading-2">Brand Pilihan UntukMu</h2>
 
