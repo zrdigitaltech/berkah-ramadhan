@@ -9,6 +9,7 @@ import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 
 import FloatingWhatsApp from '@/app/components/FloatingWhatsApp';
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 export const metadata = {
   authors: [{ name: 'ZRDevelopers' }],
@@ -18,8 +19,8 @@ export const metadata = {
   description:
     'Tersedia berbagai pilihan cemilan lezat dan koleksi fashion trendi untuk melengkapi harimu.',
   openGraph: {
-    url: 'https://zrdevelopers.github.io/berkah-ramadhan',
-    images: 'https://zrdevelopers.github.io/berkah-ramadhan/assets/images/vandz15.png'
+    url: domain,
+    images: `${domain}/assets/images/vandz15.png`
   }
 };
 
