@@ -12,11 +12,11 @@ import FloatingWhatsApp from '@/app/components/FloatingWhatsApp';
 
 export const metadata = {
   authors: [{ name: 'ZRDevelopers' }],
-  keywords: ['Jual Cokelat', 'Jual Kaos', 'ZRDevelopers', 'Zikri Ramdani'],
+  keywords: ['Jual Cokelat', 'Jual Kaos', 'Jual Kue', 'ZRDevelopers', 'Zikri Ramdani'],
   manifest: '/berkah-ramadhan/manifest.json',
   title: 'Yuk, temukan yang kamu butuhkan! | VandZ15',
   description:
-    'Tersedia berbagai pilihan cokelat lezat dan koleksi fashion trendi untuk melengkapi harimu.',
+    'Tersedia berbagai pilihan cemilan lezat dan koleksi fashion trendi untuk melengkapi harimu.',
   openGraph: {
     url: 'https://zrdevelopers.github.io/berkah-ramadhan',
     images: 'https://zrdevelopers.github.io/berkah-ramadhan/assets/images/vandz15.png'
