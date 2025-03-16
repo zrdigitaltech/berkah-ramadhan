@@ -19,7 +19,7 @@ const nextConfig = {
     // Customize Webpack configuration if needed
     return config;
   },
-  generateMetadata: true,
+  // generateMetadata: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
