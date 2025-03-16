@@ -1,6 +1,7 @@
 'use client';
 
 import React, { Fragment, useEffect, useState, useRef, useMemo } from 'react';
+import Link from 'next/link';
 
 import SearchBar from '@/app/components/SearchBar';
 import SearchResults from '@/app/components/SearchResults';
@@ -8,7 +9,11 @@ import ProductList from '@/app/components/ProductList';
 import ProductTerlaris from '@/app/components/ProductTerlaris';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getListProducts, getTerlarisProducts, resetProductsInLocalStorage } from '@/app/redux/action/products/creator';
+import {
+  getListProducts,
+  getTerlarisProducts,
+  resetProductsInLocalStorage
+} from '@/app/redux/action/products/creator';
 import { getListKategoris } from '@/app/redux/action/kategoris/creator';
 
 import Skeleton from 'react-loading-skeleton';
@@ -17,6 +22,8 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Impor CSS untuk animasi
 // modals
 import FormWhatsAppModal from '@/app/modals/formWhatsApp';
 import TerimaKasihModal from '@/app/modals/terimaKasih';
+
+import { formatPhoneNumber } from '@/app/helper/utils';
 
 export default function Index() {
   const productList = useSelector((state) => state.products.productsList);
@@ -173,6 +180,15 @@ export default function Index() {
     fetchTerlarisProducts();
   }, []);
 
+  const dataBrands = [
+    ...new Set(
+      productList
+        .map((item) => item.link_wa)
+        .filter((wa) => wa !== null && wa !== undefined) // Hindari null & undefined
+        .map((wa) => wa.toString()) // Konversi ke string setelah filtering
+    )
+  ];
+
   return (
     <Fragment>
       <section
@@ -214,6 +230,36 @@ export default function Index() {
       {/* Kontent - Cemilan untukmu hari ini */}
 
       <section className="recipes recipes-today" ref={mainContent}>
+        <div className="container mb-3">
+          {/* Tab Navigation */}
+          <div className="align-items-center tabs-container">
+            <h2 className="heading-2">Brand Pilihan UntukMu</h2>
+
+            {/* Scrollable container for other categories */}
+            <div className="categories-scrollable">
+              {isLoadingCategories ? (
+                <div
+                  className="align"
+                  style={{ display: 'flex', overflowX: 'auto', paddingBottom: '10px' }}
+                >
+                  {Array(3)
+                    .fill()
+                    .map((_, index) => (
+                      <div key={index} style={{ marginRight: '10px' }}>
+                        <Skeleton height={40} width={100} />
+                      </div>
+                    ))}
+                </div>
+              ) : (
+                dataBrands?.map((brand, idx) => (
+                  <Link key={idx || brand} className={`tab`} href={`/${brand}`}>
+                    {formatPhoneNumber(brand)}
+                  </Link>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
         <div className="container" style={{ marginBottom: '3rem' }}>
           <h2 className="heading-2" style={{ marginBottom: '1rem' }}>
             Terlaris

@@ -25,7 +25,7 @@ export const resetProductsInLocalStorage = () => {
     varian: product.varian.map((variant, idxs) => ({
       ...variant,
       id: idxs + 1
-    })),
+    }))
   }));
 
   // Simpan produk yang sudah diperbarui ke localStorage
