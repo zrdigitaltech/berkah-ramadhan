@@ -7,7 +7,7 @@ import './cart.scss';
 import './navbar.scss';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getListKeranjangs } from '@/app/redux/action/keranjangs/creator';
+import { getListKeranjangs, resetKeranjangInLocalStorage } from '@/app/redux/action/keranjangs/creator';
 
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
@@ -30,6 +30,7 @@ const Index = () => {
 
   const fetchKeranjangs = async () => {
     setIsLoading(true);
+    resetKeranjangInLocalStorage();
     await dispatch(getListKeranjangs());
     setIsLoading(false);
   };

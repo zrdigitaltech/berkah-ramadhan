@@ -37,6 +37,15 @@ export const saveListKeranjangs = (payload) => {
   };
 };
 
+export const resetKeranjangInLocalStorage = () => {
+  try {
+    // Hapus data keranjang dari localStorage
+    localStorage.removeItem('keranjangs');
+  } catch (error) {
+    console.error('Error resetting cart in localStorage:', error);
+  }
+};
+
 // Tambah produk ke keranjang
 export const addToCart = (product, variant, quantity) => {
   return (dispatch, getState) => {
