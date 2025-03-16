@@ -14,7 +14,7 @@ const domain = process.env.NEXT_PUBLIC_DOMAIN;
 export const metadata = {
   authors: [{ name: 'ZRDevelopers' }],
   keywords: ['Jual Cokelat', 'Jual Kaos', 'Jual Kue', 'ZRDevelopers', 'Zikri Ramdani'],
-  manifest: '/berkah-ramadhan/manifest.json',
+  manifest: `${domain}/manifest.json`,
   title: 'Yuk, temukan yang kamu butuhkan! | VandZ15',
   description:
     'Tersedia berbagai pilihan cemilan lezat dan koleksi fashion trendi untuk melengkapi harimu.',
