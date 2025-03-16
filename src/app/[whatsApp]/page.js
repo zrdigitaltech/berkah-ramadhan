@@ -172,3 +172,5 @@ export default function TokoPage({ params }) {
     </Fragment>
   );
 }
+
+export const dynamic = "force-dynamic";

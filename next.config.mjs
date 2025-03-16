@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basePath: "/",
-  // output: "export",
-  output: "standalone",
+  experimental: {
+    appDir: true,
+  },
+  output: "standalone", // atau hapus "output: export"
   swcMinify: true,
   images: {
     unoptimized: true,
@@ -19,7 +20,7 @@ const nextConfig = {
     // Customize Webpack configuration if needed
     return config;
   },
-  // generateMetadata: true,
+  generateMetadata: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
