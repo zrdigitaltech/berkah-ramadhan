@@ -51,7 +51,7 @@ export default function Index() {
 
   const fetchProducts = async () => {
     setIsLoadingProducts(true);
-    await resetProductsInLocalStorage();
+    resetProductsInLocalStorage();
     await dispatch(getListProducts());
     setIsLoadingProducts(false);
   };

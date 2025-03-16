@@ -6,7 +6,7 @@ import './id.scss';
 import ProductList from '@/app/components/ProductList';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getListProducts } from '@/app/redux/action/products/creator';
+import { getListProducts, resetProductsInLocalStorage } from '@/app/redux/action/products/creator';
 
 import { formatPhoneNumber } from '@/app/helper/utils';
 
@@ -91,6 +91,7 @@ export default function TokoPage(props) {
   const fetchProducts = async () => {
     if (!productList.length) {
       setIsLoading(true);
+      resetProductsInLocalStorage();
       await dispatch(getListProducts()); // Fetch data hanya jika belum ada
       setIsLoading(false);
     }
