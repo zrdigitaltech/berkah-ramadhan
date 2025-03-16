@@ -172,11 +172,3 @@ export default function TokoPage({ params }) {
     </Fragment>
   );
 }
-
-export async function generateStaticParams() {
-  const products = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products`).then(res => res.json());
-
-  return products.map((product) => ({
-    id: product.link_wa.toString(),
-  }));
-}
