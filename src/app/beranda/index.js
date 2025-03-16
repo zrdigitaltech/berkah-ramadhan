@@ -232,8 +232,9 @@ export default function Index() {
       <section className="recipes recipes-today" ref={mainContent}>
       <div style={{ height: '60px' }}></div>
         <div className="container mb-3">
+        <h2 className="heading-2">Toko Pilihan UntukMu</h2>
           <div className="align-items-center tabs-container">
-            <h2 className="heading-2">Toko Pilihan UntukMu</h2>
+            
 
             {/* Scrollable container for other categories */}
             <div className="categories-scrollable">
