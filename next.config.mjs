@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/",
+  // basePath: "/",
   // output: "export",
   output: "standalone",
   swcMinify: true,
