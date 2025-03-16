@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, use, useState, Fragment } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import './id.scss';
 
 import ProductList from '@/app/components/ProductList';
