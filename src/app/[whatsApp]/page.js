@@ -1,12 +1,22 @@
 import React, { use } from 'react';
 import Page from "./index";
 
+// Data Json
+import DataProducts from '@/app/redux/action/products/data-products.json';
+
 export async function generateStaticParams() {
-  // Contoh: ambil daftar WhatsApp ID dari API atau database
-  const waIds = ['6281228883616', '628977663923']; // Ganti dengan ID yang valid
-  
-  return waIds.map((id) => ({
-    whatsApp: id,
+  // Filter hanya item yang memiliki link_wa yang valid
+  const waIds = [
+    ...new Set(
+      DataProducts
+        .map((item) => item.link_wa)
+        .filter((wa) => wa !== null && wa !== undefined) // Hindari null & undefined
+        .map((wa) => wa.toString()) // Konversi ke string setelah filtering
+    )
+  ];
+
+  return waIds.map((whatsApp) => ({
+    whatsApp,
   }));
 }
 
