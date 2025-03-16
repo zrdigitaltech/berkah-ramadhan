@@ -2,6 +2,7 @@
 const nextConfig = {
   // basePath: "/",
   // output: "export",
+  output: "standalone",
   swcMinify: true,
   images: {
     unoptimized: true,
