@@ -8,7 +8,7 @@ import ProductList from '@/app/components/ProductList';
 import ProductTerlaris from '@/app/components/ProductTerlaris';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getListProducts, getTerlarisProducts } from '@/app/redux/action/products/creator';
+import { getListProducts, getTerlarisProducts, resetProductsInLocalStorage } from '@/app/redux/action/products/creator';
 import { getListKategoris } from '@/app/redux/action/kategoris/creator';
 
 import Skeleton from 'react-loading-skeleton';
@@ -51,6 +51,7 @@ export default function Index() {
 
   const fetchProducts = async () => {
     setIsLoadingProducts(true);
+    await resetProductsInLocalStorage();
     await dispatch(getListProducts());
     setIsLoadingProducts(false);
   };

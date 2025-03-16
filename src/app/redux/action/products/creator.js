@@ -3,9 +3,6 @@ import { actionType } from '@/app/redux/action/products/type';
 // Data Json
 import DataProducts from './data-products.json';
 
-// Function to generate a unique ID
-import { generateUniqueId } from '@/app/helper/utils';
-
 // Function to retrieve products from localStorage or generate new ones
 const getStoredProducts = () => {
   const storedProducts = localStorage.getItem('products');
@@ -15,6 +12,24 @@ const getStoredProducts = () => {
 // Function to save products to localStorage
 const saveProductsToLocalStorage = (products) => {
   localStorage.setItem('products', JSON.stringify(products));
+};
+
+export const resetProductsInLocalStorage = () => {
+  // Hapus data produk di localStorage
+  localStorage.removeItem('products');
+
+  // Simpan ulang data dari DataProducts.json
+  const productsWithIds = DataProducts.map((product, idx) => ({
+    ...product,
+    id: idx + 1,
+    varian: product.varian.map((variant, idxs) => ({
+      ...variant,
+      id: idxs + 1
+    })),
+  }));
+
+  // Simpan produk yang sudah diperbarui ke localStorage
+  saveProductsToLocalStorage(productsWithIds);
 };
 
 export const getListProducts = () => {
