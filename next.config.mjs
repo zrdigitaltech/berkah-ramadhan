@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  output: "standalone", // atau hapus "output: export"
+  // experimental: {
+  //   appDir: true,
+  // },
+  // output: "standalone", // atau hapus "output: export"
   swcMinify: true,
   images: {
     unoptimized: true,

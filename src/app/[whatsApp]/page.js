@@ -15,6 +15,15 @@ import FormWhatsAppModal from '@/app/modals/formWhatsApp';
 import TerimaKasihModal from '@/app/modals/terimaKasih';
 import ShareModal from '@/app/modals/share';
 
+export async function generateStaticParams() {
+  // Contoh: ambil daftar WhatsApp ID dari API atau database
+  const waIds = ['6281228883616']; // Ganti dengan ID yang valid
+  
+  return waIds.map((id) => ({
+    whatsApp: id,
+  }));
+}
+
 export default function TokoPage({ params }) {
   // Unwrap params menggunakan use()
   const { whatsApp } = use(params);
@@ -173,4 +182,3 @@ export default function TokoPage({ params }) {
   );
 }
 
-export const dynamic = "force-dynamic";
