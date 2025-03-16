@@ -1,0 +1,52 @@
+.social-icons {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8; // Efek hover, sedikit transparan
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+
+      i {
+        font-size: 20px;
+        transition: color 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // Custom colors for each platform
+  li:nth-child(1) {
+    border: 1px solid var(--primary-color); // WhatsApp
+    background: none;
+  }
+  
+  li:nth-child(2) {
+    border: 1px solid #1877f2; // Facebook
+    background: none;
+  }
+  
+  li:nth-child(3) {
+    border: 1px solid #000; // Copy link
+    background: none;
+  }
+}
