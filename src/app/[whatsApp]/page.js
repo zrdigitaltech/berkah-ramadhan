@@ -17,7 +17,7 @@ import ShareModal from '@/app/modals/share';
 
 export default function TokoPage({ params }) {
   // Unwrap params menggunakan use()
-  const { id } = use(params);
+  const { whatsApp } = use(params);
 
   const dispatch = useDispatch();
 
@@ -26,7 +26,7 @@ export default function TokoPage({ params }) {
   const [isLoading, setIsLoading] = useState(false);
 
   // Konversi ID ke Number
-  const productId = Number(id);
+  const productId = Number(whatsApp);
 
   // Cari semua produk yang memiliki link_wa yang sama
   const products = productList.filter((p) => Number(p.link_wa) === productId);
@@ -108,7 +108,7 @@ export default function TokoPage({ params }) {
       <section>
         <div className="container">
           <div className="card-toko">
-            <h1 className="text-2xl font-bold">{formatPhoneNumber(id)}</h1>
+            <h1 className="text-2xl font-bold">{formatPhoneNumber(whatsApp)}</h1>
             <small>Kota Tangerang</small>
             <div className="d-flex mt-3">
               <button
@@ -168,7 +168,7 @@ export default function TokoPage({ params }) {
         handlePesananViaWhatsApp={() => setShowTerimaKasih(true)}
       />
       <TerimaKasihModal show={showTerimaKasih} onClose={() => setShowTerimaKasih(false)} />
-      <ShareModal show={showShare} onClose={() => setShowShare(false)} link_wa={id} />
+      <ShareModal show={showShare} onClose={() => setShowShare(false)} link_wa={whatsApp} />
     </Fragment>
   );
 }
