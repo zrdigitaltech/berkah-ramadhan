@@ -193,7 +193,7 @@ export default function Index() {
     <Fragment>
       <section
         className="hero"
-        style={{ backgroundImage: `url('/berkah-ramadhan/assets/images/bg-hero.png')` }}
+        style={{ backgroundImage: `url('/assets/images/bg-hero.png')` }}
       >
         <div className="container">
           <h1>
