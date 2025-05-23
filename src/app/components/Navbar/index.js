@@ -73,11 +73,13 @@ const Index = () => {
             <img src={domain + '/assets/images/vandz15.png'} alt="Logo" className="brand-img" />
           </Link>
           <ul className="nav-list">
-            <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/' ? 'selected' : ''}`} href="/">
-                <span className="produk-icon">🛍️</span>
-              </Link>
-            </li>
+            {pathname !== '/' &&
+              <li className="nav-item">
+                <Link className={`nav-link ${pathname === '/' ? 'selected' : ''}`} href="/">
+                  <span className="produk-icon">🛍️</span>
+                </Link>
+              </li>
+            }
             {pathname === '/keranjang' ? (
               <li className="nav-item">
                 <Link
