@@ -3,19 +3,19 @@
   "name": "VandZ15",
   "icons": [
     {
-      "src": "/berkah-belanja/assets/images/512x512.png",
+      "src": "/berkah-ramadhan/assets/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/berkah-belanja/assets/images/192x192.png",
+      "src": "/berkah-ramadhan/assets/images/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "id": "/berkah-belanja/",
-  "start_url": "/berkah-belanja/",
-  "scope": "/berkah-belanja/",
+  "id": "/berkah-ramadhan/",
+  "start_url": "/berkah-ramadhan/",
+  "scope": "/berkah-ramadhan/",
   "background_color": "#ffffff",
   "display": "standalone",
   "theme_color": "#ffffff",
