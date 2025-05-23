@@ -1,22 +1,26 @@
 {
-  "short_name": "VandZ15",
-  "name": "VandZ15",
+  "short_name": "Berkah Belanja",
+  "name": "Berkah Belanja",
   "icons": [
     {
-      "src": "/assets/images/512x512.png",
+      "src": "/berkah-belanja/assets/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/assets/images/192x192.png",
+      "src": "/berkah-belanja/assets/images/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "id": "/",
-  "start_url": "/",
+  "id": "/berkah-belanja/",
+  "start_url": "/berkah-belanja/",
+  "scope": "/berkah-belanja/",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/",
-  "theme_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "shortcuts": [],
+  "description": "Tersedia berbagai pilihan cemilan lezat dan koleksi fashion trendi untuk melengkapi harimu.",
+  "screenshots": []
 }
+
