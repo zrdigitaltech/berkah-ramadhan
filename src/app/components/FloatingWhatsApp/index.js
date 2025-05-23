@@ -7,6 +7,7 @@ import { getListFloatingWhatsapp } from '@/app/redux/action/floatingWhatsapp/cre
 import { usePathname } from 'next/navigation';
 
 const Index = () => {
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variables
   const floatingWhatsAppList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
   const pathname = usePathname();
@@ -22,7 +23,7 @@ const Index = () => {
     <Fragment>
       {pathname !== '/keranjang' && (
         <FloatingWhatsApp
-          avatar={floatingWhatsAppList?.avatar}
+          avatar={domain + floatingWhatsAppList?.avatar}
           phoneNumber={floatingWhatsAppList?.phone_number}
           accountName={floatingWhatsAppList?.account_name}
           chatMessage={floatingWhatsAppList?.chat_message}

@@ -26,6 +26,7 @@ import TerimaKasihModal from '@/app/modals/terimaKasih';
 import { formatPhoneNumber } from '@/app/helper/utils';
 
 export default function Index() {
+  const domain = process.env.NEXT_PUBLIC_DOMAIN; // Access the environment variables
   const productList = useSelector((state) => state.products.productsList);
   const productTerlaris = useSelector((state) => state.products.productsTerlaris);
   const kategoriList = useSelector((state) => state.kategoris.kategorisList);
@@ -193,7 +194,7 @@ export default function Index() {
     <Fragment>
       <section
         className="hero"
-        style={{ backgroundImage: `url('/assets/images/bg-hero.png')` }}
+        style={{ backgroundImage: `url(${domain}'/assets/images/bg-hero.png')` }}
       >
         <div className="container">
           <h1>
