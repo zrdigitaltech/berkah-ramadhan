@@ -106,7 +106,7 @@ export default function TokoPage(props) {
 
   return (
     <Fragment>
-      <section>
+      <section style={{paddingTop: '2rem'}}>
         <div className="container">
           <div className="card-toko">
             <h1 className="text-2xl font-bold">{formatPhoneNumber(whatsApp)}</h1>
