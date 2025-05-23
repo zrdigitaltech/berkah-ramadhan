@@ -53,9 +53,17 @@ export default function Index() {
   const handleScrollDown = () => {
     const html = document.querySelector('html');
     html.classList.add('scroll-smooth');
-    mainContent.current?.scrollIntoView();
+  
+    const offsetTop = mainContent.current?.offsetTop;
+    if (offsetTop !== undefined) {
+      window.scrollTo({
+        top: offsetTop - 12, // Ubah 100 sesuai kebutuhan offset
+        behavior: 'smooth',
+      });
+    }
+  
     html.classList.remove('scroll-smooth');
-  };
+  };  
 
   const fetchProducts = async () => {
     setIsLoadingProducts(true);
@@ -92,14 +100,16 @@ export default function Index() {
           .includes(query.replace(/[-/]/g, '').toLowerCase())
       );
       setFilteredProducts(filteredList);
-
-      if (query && filteredList) {
+  
+      if (query && filteredList.length > 0) {
         const offsetTop = searchResultsRef?.current?.offsetTop;
-        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        if (offsetTop !== undefined) {
+          window.scrollTo({ top: offsetTop - 100, behavior: 'smooth' }); // atur top
+        }
       }
       setIsLoading(false);
     }, 500);
-  };
+  };  
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
