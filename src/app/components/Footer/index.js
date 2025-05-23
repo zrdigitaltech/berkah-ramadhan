@@ -19,7 +19,7 @@ export default function Index() {
             &copy; 2024 - {new Date().getFullYear()}{' '}
             <Link href="/" className="text-primary">
               VandZ15 
-            </Link> | All rights reserved{' '}
+            </Link>{' '}
             Dikembangkan oleh{' '}
             <a href="https://ZRdigitalTech.github.io/" target="_blank" className="text-primary">
               ZRdigitalTech
