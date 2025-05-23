@@ -21,8 +21,8 @@ export default function Index() {
               VandZ15
             </Link>{' '}
             Published by{' '}
-            <a href="https://zrdevelopers.github.io/" target="_blank" className="text-primary">
-              ZRDevelopers
+            <a href="https://ZRdigitalTech.github.io/" target="_blank" className="text-primary">
+              ZRdigitalTech
             </a>
             . All rights reserved
           </small>

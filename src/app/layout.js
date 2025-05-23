@@ -12,8 +12,8 @@ import FloatingWhatsApp from '@/app/components/FloatingWhatsApp';
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 export const metadata = {
-  authors: [{ name: 'ZRDevelopers' }],
-  keywords: ['Jual Cokelat', 'Jual Kaos', 'Jual Kue', 'ZRDevelopers', 'Zikri Ramdani'],
+  authors: [{ name: 'ZRdigitalTech' }],
+  keywords: ['Jual Cokelat', 'Jual Kaos', 'Jual Kue', 'ZRdigitalTech', 'Zikri Ramdani'],
   manifest: `${domain}/manifest.json`,
   title: 'Yuk, temukan yang kamu butuhkan! | VandZ15',
   description:

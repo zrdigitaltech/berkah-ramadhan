@@ -6,7 +6,7 @@ import { formatPhoneNumber } from '@/app/helper/utils';
 
 const Index = (props) => {
   const { show, onClose, link_wa } = props;
-  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'https://zrdevelopers.github.io/berkah-ramadhan';
+  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'https://ZRdigitalTech.github.io/berkah-ramadhan';
 
   const shareLinks = {
     whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(`Lihat produk ini: *${formatPhoneNumber(link_wa)}* - ${domain}/${link_wa}`)}`,
